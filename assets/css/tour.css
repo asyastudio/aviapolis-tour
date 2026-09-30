@@ -612,3 +612,12 @@ main>section:not(.safety2):not(.safety):not(.plane):not(.zz1):not(.zz2):not(.zz3
 .road .stop span.t{font-size:clamp(14px,1vw,16px)!important}
 .road .stop .d{font-size:14px!important}
 .head nav{gap:clamp(44px,4.2vw,64px)!important}
+
+/* ELEMENT CARDS: photo cards with tag, title, description (ref style) */
+.el{aspect-ratio:4/4.7!important;border-radius:24px 24px 24px 0!important;box-shadow:0 24px 50px rgba(0,15,60,.35)!important}
+.el::before{display:none!important}
+.el::after{background:linear-gradient(0deg,rgba(4,14,44,.92) 0%,rgba(4,14,44,.62) 30%,rgba(4,14,44,.12) 58%,rgba(4,14,44,0) 70%)!important}
+.el figcaption{left:0!important;right:0!important;bottom:0!important;height:auto!important;padding:0 clamp(18px,1.8vw,28px) clamp(20px,2vw,30px)!important;background:none!important;border:0!important;box-shadow:none!important;backdrop-filter:none!important;-webkit-backdrop-filter:none!important;-webkit-mask-image:none!important;mask-image:none!important;gap:8px!important;justify-content:flex-end}
+.el-tag{align-self:flex-start;margin-bottom:4px;padding:5px 11px;border-radius:10px 10px 10px 0;background:rgba(255,255,255,.18);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);color:#fff;font-size:11.5px;font-weight:700;letter-spacing:.07em;text-transform:uppercase;line-height:1.2}
+.el b{font-size:clamp(20px,1.7vw,26px)!important;line-height:1.1;color:#fff;text-shadow:none!important}
+.el .el-desc{font-size:clamp(13px,.95vw,15px);line-height:1.4;color:rgba(255,255,255,.78);text-shadow:none!important;min-height:0!important;max-width:30em}
