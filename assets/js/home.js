@@ -1,0 +1,2 @@
+(function(){var h=document.getElementById('head');function f(){h.classList.toggle('scrolled',window.scrollY>40)}window.addEventListener('scroll',f,{passive:true});f();})();
+document.getElementById('lead').addEventListener('submit',function(e){e.preventDefault();var ok=document.getElementById('ok'),n=document.getElementById('f-name').value.trim(),p=document.getElementById('f-phone').value.trim();ok.textContent=(!n||!p)?'Заполните имя и телефон, чтобы мы могли ответить.':'Это прототип: заявка никуда не отправлена.';ok.hidden=false;});
