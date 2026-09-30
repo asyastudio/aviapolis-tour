@@ -286,3 +286,20 @@ main>section:not(.safety) p,main>section:not(.safety) .routes-head p{color:#fff}
 /* HEADER from Frame 2: neutral gray, only opacity changes */
 .head-in{background:rgba(19,19,19,.22)!important;border-bottom:1px solid rgba(255,255,255,.22)!important;min-height:69px;box-sizing:border-box}
 .head.scrolled .head-in{background:rgba(19,19,19,.55)!important}
+
+/* ===== FRAME 2 details: header ===== */
+.head{padding:0!important}
+.head-in{display:flex!important;align-items:center;max-width:none!important;height:69px;min-height:0!important;padding:0 clamp(16px,4.375vw,63px) 0 clamp(12px,1.458vw,21px)!important;border-radius:0!important;border:0!important;border-bottom:1px solid rgba(255,255,255,.22)!important;background:rgba(19,19,19,.22)!important;backdrop-filter:none!important;-webkit-backdrop-filter:none!important;gap:0!important}
+.head.scrolled .head-in{background:rgba(19,19,19,.55)!important}
+.brand{flex:none;margin:0!important;display:flex;align-items:center}
+.brand img{display:none!important}
+.brand img.logo-tour{display:block!important;width:171px;height:auto}
+.head nav{display:flex!important;gap:60px!important;margin-left:clamp(24px,13.403vw,193px)!important;height:auto!important;padding:0!important;background:none!important;border:0!important}
+.head nav a,.head.scrolled nav a{font-family:var(--f-body)!important;font-size:18px!important;font-weight:400!important;color:#fff!important;padding:0!important;opacity:1!important;letter-spacing:0!important}
+.head-cta{margin-left:auto!important;display:flex;align-items:center;gap:18px!important}
+.head .tg,.head.scrolled .tg{width:40px!important;height:40px!important;background:none!important;border:0!important;color:#fff!important;border-radius:0!important}
+.head .tg svg{width:22px;height:22px}
+.head-contact{font-family:var(--f-body);font-size:18px!important;font-weight:400;color:#fff!important}
+@media (max-width:1100px){.head nav{gap:28px!important;margin-left:32px!important}}
+@media (max-width:900px){.head nav{display:none!important}}
+.brand img.logo-tour{width:auto!important;height:48px!important}

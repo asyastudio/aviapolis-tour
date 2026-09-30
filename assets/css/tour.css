@@ -716,3 +716,57 @@ main>section:not(.safety2):not(.safety):not(.plane):not(.zz1):not(.zz2):not(.zz3
 /* HEADER from Frame 2: neutral gray, only opacity changes */
 .head-in{background:rgba(19,19,19,.22)!important;border-bottom:1px solid rgba(255,255,255,.22)!important;min-height:69px;box-sizing:border-box}
 .head.scrolled .head-in{background:rgba(19,19,19,.55)!important}
+
+/* ===== FRAME 2 details: header ===== */
+.head{padding:0!important}
+.head-in{display:flex!important;align-items:center;max-width:none!important;height:69px;min-height:0!important;padding:0 clamp(16px,4.375vw,63px) 0 clamp(12px,1.458vw,21px)!important;border-radius:0!important;border:0!important;border-bottom:1px solid rgba(255,255,255,.22)!important;background:rgba(19,19,19,.22)!important;backdrop-filter:none!important;-webkit-backdrop-filter:none!important;gap:0!important}
+.head.scrolled .head-in{background:rgba(19,19,19,.55)!important}
+.brand{flex:none;margin:0!important;display:flex;align-items:center}
+.brand img{display:none!important}
+.brand img.logo-tour{display:block!important;width:171px;height:auto}
+.head nav{display:flex!important;gap:60px!important;margin-left:clamp(24px,13.403vw,193px)!important;height:auto!important;padding:0!important;background:none!important;border:0!important}
+.head nav a,.head.scrolled nav a{font-family:var(--f-body)!important;font-size:18px!important;font-weight:400!important;color:#fff!important;padding:0!important;opacity:1!important;letter-spacing:0!important}
+.head-cta{margin-left:auto!important;display:flex;align-items:center;gap:18px!important}
+.head .tg,.head.scrolled .tg{width:40px!important;height:40px!important;background:none!important;border:0!important;color:#fff!important;border-radius:0!important}
+.head .tg svg{width:22px;height:22px}
+.head-contact{font-family:var(--f-body);font-size:18px!important;font-weight:400;color:#fff!important}
+@media (max-width:1100px){.head nav{gap:28px!important;margin-left:32px!important}}
+@media (max-width:900px){.head nav{display:none!important}}
+
+/* ===== FRAME 2 details: sections ===== */
+.hero-f2{min-height:clamp(540px,58.542vw,843px)!important}
+.hero-f2 .hero-main{padding-top:clamp(120px,17.014vw,245px)!important}
+.hero-f2 .hero-links{margin-top:clamp(28px,3.403vw,49px)!important}
+.marquee{height:33px;box-sizing:border-box;padding-block:0!important;display:flex;align-items:center}
+
+.expect{padding-top:clamp(40px,4.167vw,60px)!important;background:
+  radial-gradient(60% 18% at 50% 64%,rgba(0,166,255,.55),rgba(0,166,255,0) 70%),
+  linear-gradient(180deg,#0A2A6B 0%,#003DB0 5%,#0040B5 50%,#0052C3 60%,#0079E9 68%,#00A6FF 78%,#00A6FF 100%)!important}
+.expect .bps{display:none!important}
+.fan{align-items:flex-start!important;justify-content:center!important;margin-top:clamp(24px,1.319vw,19px)!important;gap:clamp(16px,3.611vw,52px)!important}
+.fan-card{width:clamp(220px,25.000vw,360px)!important;aspect-ratio:360/515!important;border-radius:24px 24px 24px 0!important;box-shadow:0 24px 50px rgba(0,20,80,.35)!important}
+.fan-card.c1,.fan-card.c2,.fan-card.c3{transform:none!important}
+.fan-card.c1{margin-top:clamp(0px,1.042vw,15px)!important}
+.fan-card.c2{margin-top:clamp(0px,4.167vw,60px)!important}
+.fan-card.c3{margin-top:0!important}
+.fan-card:hover{transform:translateY(-8px)!important}
+.fan-card::after{background:linear-gradient(0deg,rgba(4,14,44,.78) 0%,rgba(4,14,44,.4) 25%,rgba(4,14,44,0) 40%)!important}
+.fan-card figcaption{padding:0 22px 22px!important;gap:8px!important}
+.fan-tag{height:40px;box-sizing:border-box;display:inline-flex;align-items:center;padding:0 14px!important;font-size:20px!important;border-radius:10px 10px 10px 0!important;margin-bottom:4px!important;background:rgba(255,255,255,.2)!important}
+.fan-card b{font-size:24px!important;line-height:1.1}
+.fan-card figcaption>span:last-child{font-size:16px!important;line-height:1.25!important}
+.exp-lead{margin-top:clamp(32px,3.889vw,56px)!important}
+.facts{margin-top:clamp(32px,3.542vw,51px)!important;padding-bottom:clamp(56px,8.819vw,127px)!important;max-width:1312px!important;gap:0!important}
+.glass-ico{width:80px!important;height:80px!important;border-radius:28px 28px 28px 0!important;background:linear-gradient(180deg,rgba(255,255,255,.42),rgba(255,255,255,.1))!important;border:1.5px solid rgba(255,255,255,.6)!important;backdrop-filter:blur(18px)!important;-webkit-backdrop-filter:blur(18px)!important;box-shadow:0 16px 30px rgba(0,40,120,.25),inset 0 1px 0 rgba(255,255,255,.5)!important}
+.glass-ico svg{width:48px!important;height:48px!important;fill:none;stroke:#fff;stroke-width:2.8;stroke-linecap:round;stroke-linejoin:round}
+.fact h3{margin-top:19px!important;line-height:41px!important}
+.fact p{margin-top:9px!important;font-size:21px!important;line-height:23px!important;max-width:none!important;letter-spacing:.01em}
+#route{padding-top:clamp(56px,12.500vw,180px)!important;background:linear-gradient(180deg,#0043BF 0%,#0043BF 40%,#0A55D0 100%)!important}
+#route .bps{display:none!important}
+.hero-f2 .hero-main{margin-block:0!important}
+.hero-f2 h1{margin:0!important}
+main>section.expect#expect{background:
+  radial-gradient(60% 18% at 50% 64%,rgba(0,166,255,.5),rgba(0,166,255,0) 70%),
+  linear-gradient(180deg,#0A2A6B 0%,#003DB0 5%,#0040B5 48%,#0052C3 58%,#0079E9 66%,#00A6FF 76%,#00A6FF 100%)!important}
+main>section#route{background:linear-gradient(180deg,#0043BF 0%,#0043BF 40%,#0A55D0 100%)!important}
+.brand img.logo-tour{width:auto!important;height:48px!important}
