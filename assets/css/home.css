@@ -311,3 +311,16 @@ main>section:not(.safety) p,main>section:not(.safety) .routes-head p{color:#fff}
 .head-in>.head-cta{grid-column:3;grid-row:1;justify-self:end;margin-left:0!important}
 @media (max-width:900px){.head-in{grid-template-columns:auto 1fr}.head-in>.brand{grid-column:1;justify-self:start}.head-in>.head-cta{grid-column:2}}
 .hf2::after{background:linear-gradient(180deg,rgba(19,19,19,.35) 0%,rgba(19,19,19,.22) 40%,rgba(19,19,19,.22) 70%,rgba(19,19,19,.3) 100%)!important}
+
+/* HEADER white like Alto */
+.head-in,.head.scrolled .head-in{background:#fff!important;border-bottom:1px solid rgba(0,0,0,.06)!important;box-shadow:0 2px 16px rgba(0,0,0,.06)}
+.head nav a,.head.scrolled nav a,.head-contact,.head .tg,.head.scrolled .tg{color:#0A1E40!important}
+.head nav a:hover,.head-contact:hover{color:#0043BF!important}
+.head .tg svg{fill:#0043BF}
+
+/* HEADER: logo left, menu centre, contacts right */
+.head-in>.brand{grid-column:1!important;justify-self:start!important}
+.head-in>nav{grid-column:2!important;justify-self:center!important;align-self:center}
+.head-in>.head-cta{grid-column:3!important;justify-self:end!important;align-self:center}
+.head-in{align-items:center!important}
+.head nav a,.head-contact{line-height:1!important}
