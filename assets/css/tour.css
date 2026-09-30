@@ -712,3 +712,7 @@ main>section:not(.safety2):not(.safety):not(.plane):not(.zz1):not(.zz2):not(.zz3
 #route{padding-top:clamp(40px,4.236vw,61px)!important}
 #route h2{font-size:clamp(30px,3.472vw,50px)!important}
 @media (max-width:900px){.fan-card.c1,.fan-card.c3{transform:none!important}}
+
+/* HEADER from Frame 2: neutral gray, only opacity changes */
+.head-in{background:rgba(19,19,19,.22)!important;border-bottom:1px solid rgba(255,255,255,.22)!important;min-height:69px;box-sizing:border-box}
+.head.scrolled .head-in{background:rgba(19,19,19,.55)!important}
