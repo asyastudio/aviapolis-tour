@@ -890,3 +890,9 @@ main>section#program .prog2-sub{margin:6px 0 0!important;padding:0!important}
 /* HEADER: светлая полупрозрачная плашка как у Альто */
 .head-in{background:rgba(255,255,255,.62)!important;backdrop-filter:blur(18px) saturate(1.3)!important;-webkit-backdrop-filter:blur(18px) saturate(1.3)!important;border-bottom:1px solid rgba(255,255,255,.5)!important;box-shadow:none!important}
 .head.scrolled .head-in{background:rgba(255,255,255,.82)!important;box-shadow:0 2px 16px rgba(19,19,19,.06)!important}
+
+/* HEADER: вернули прозрачную серую плашку с белым текстом */
+.head-in{background:rgba(19,19,19,.22)!important;backdrop-filter:none!important;-webkit-backdrop-filter:none!important;border-bottom:1px solid rgba(255,255,255,.22)!important;box-shadow:none!important}
+.head.scrolled .head-in{background:rgba(19,19,19,.55)!important;box-shadow:none!important}
+.head nav a,.head.scrolled nav a,.head-contact,.head .tg,.head.scrolled .tg,.head nav a:hover,.head-contact:hover{color:#fff!important}
+.head .tg svg{fill:#fff!important}
