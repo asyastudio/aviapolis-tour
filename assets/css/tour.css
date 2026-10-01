@@ -896,3 +896,6 @@ main>section#program .prog2-sub{margin:6px 0 0!important;padding:0!important}
 .head.scrolled .head-in{background:rgba(19,19,19,.55)!important;box-shadow:none!important}
 .head nav a,.head.scrolled nav a,.head-contact,.head .tg,.head.scrolled .tg,.head nav a:hover,.head-contact:hover{color:#fff!important}
 .head .tg svg{fill:#fff!important}
+
+/* самолётик со шлейфом: левее и под иконками */
+.exp-decor{top:auto!important;bottom:min(6px,.417vw)!important;left:min(265px,18.403vw)!important;width:min(700px,48.611vw)!important}
