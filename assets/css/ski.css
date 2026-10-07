@@ -686,3 +686,9 @@ main>section#price{background:linear-gradient(180deg,#A4D5FF 0%,#5FB4FF 100%)!im
 
 /* подвал: фото с той же обработкой, что в макете (светлее, мягче контраст, насыщеннее), кадр по центру */
 main>section#apply{background:linear-gradient(180deg,rgba(19,19,19,0) 0%,rgba(19,19,19,.04) 62%,rgba(19,19,19,.38) 100%),url("../img/ski-footer-hd8.webp") center center/cover!important}
+
+/* стоимость: небо на высоте. Бледные облака по краям и тонкая линия полёта, текст поверх */
+.sk-price{position:relative;overflow:hidden}
+.sk-price::before{content:"";position:absolute;inset:0;pointer-events:none;opacity:.6;background:url("../img/ski-cloud.webp") right -16% bottom -150px/68% auto no-repeat,url("../img/ski-cloud.webp") left -22% top -120px/46% auto no-repeat}
+.sk-price::after{content:"";position:absolute;inset:0;pointer-events:none;opacity:.75;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 600' preserveAspectRatio='none'%3E%3Cpath d='M-20 330 C260 300 520 210 800 150 C1040 100 1260 70 1460 52' fill='none' stroke='%23fff' stroke-width='2' vector-effect='non-scaling-stroke'/%3E%3C/svg%3E") center/100% 100% no-repeat}
+.sk-price>.sk-w{position:relative;z-index:1}
