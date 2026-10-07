@@ -669,3 +669,4 @@ main>section#apply{background:linear-gradient(180deg,rgba(19,19,19,0) 0%,rgba(19
 /* чертёж: развёрнут сильнее, уведён вправо, прозрачность уходит градиентом влево */
 .sk-c20,.sk-levels.on .sk-c20{width:min(720px,52vw)!important;right:-210px!important;top:-52px!important;opacity:.36!important;transform:rotate(-11deg)!important}
 @media (max-width:1000px){.sk-c20,.sk-levels.on .sk-c20{right:auto!important;top:auto!important;width:min(440px,88%)!important;transform:none!important}}
+.sk-c20,.sk-levels.on .sk-c20{right:-130px!important;top:-40px!important}
