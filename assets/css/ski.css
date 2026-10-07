@@ -448,3 +448,12 @@ main>section#price{background:linear-gradient(180deg,#ECF6FF,#DCEDFF)!important}
 .sk-stages b{font-size:18px!important}
 .sk-stages span{font-size:14.5px!important}
 @media (max-width:1000px){.sk-rgrid{grid-template-columns:minmax(0,1fr)!important}}
+
+/* полароиды: квадратная рамка со скотчем из шаблона, пины не нужны */
+.sk-pol{aspect-ratio:1775/2295!important}
+.sk-ph{left:4.6%!important;top:12%!important;width:90.8%!important;height:68.2%!important}
+.sk-pol figcaption{top:80.6%!important;bottom:1.5%!important;left:7%!important;right:7%!important}
+.sk-pin{display:none!important}
+.sk-pol strong{font-size:clamp(15px,1.4vw,20px)!important}
+.sk-pol span{font-size:clamp(11.5px,.95vw,13.5px)!important}
+.sk-pol .sk-tag{font-size:10.5px!important}
