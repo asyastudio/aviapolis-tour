@@ -561,3 +561,7 @@ main>section#apply::before{display:none!important}
 .sk-pol figcaption{top:80%!important}
 .sk-c20{width:min(800px,56vw)!important;right:-290px!important;top:-58px!important}
 .sk-levels.on .sk-c20{opacity:.2!important}
+
+/* фраза в подвале: справа в небе, под линией полёта */
+.sk-motto{position:absolute;right:max(clamp(16px,4vw,40px),calc((100% - 1200px)/2));top:clamp(120px,13vw,176px);margin:0;text-align:right;font-family:var(--f-accent);font-weight:700;font-size:clamp(24px,2.7vw,40px);line-height:1.15;color:#fff;text-shadow:0 4px 30px rgba(0,0,0,.45);pointer-events:none;z-index:1}
+@media (max-width:1000px){.sk-motto{position:static;text-align:left;margin:0 0 28px;max-width:500px;margin-inline:auto}}
