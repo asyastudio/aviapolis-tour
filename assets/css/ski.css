@@ -715,3 +715,6 @@ main>section#price.sk-price{margin-top:-1px!important}
 .sk-mottobar{margin-top:-1px!important;position:relative}
 main>section#apply{margin-top:-1px!important}
 main>section#apply::after{opacity:.14!important}
+
+/* самолётик в безопасности: спокойнее */
+.sk-loop.on~.sk-pl{opacity:.26!important}
