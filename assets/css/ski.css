@@ -391,3 +391,7 @@ main>section#apply{background:linear-gradient(160deg,rgba(0,67,191,.80),rgba(4,3
 .sk-pol{padding:16px 16px 18px!important}
 .sk-pol figcaption{padding-top:14px!important;gap:3px!important}
 .sk-pol strong{font-size:20px!important}
+/* ответ в диалоге приходит быстрее */
+.sk-chat.on .sk-deliv{animation:skFade .3s .7s both!important}
+.sk-chat.on .sk-typing{animation:skPop .3s cubic-bezier(.2,1.3,.4,1) .85s both,skOut .2s 1.75s forwards!important}
+.sk-chat.on .sk-ans{animation:skPop .45s cubic-bezier(.2,1.3,.4,1) 1.8s both!important}
