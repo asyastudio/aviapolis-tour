@@ -327,3 +327,12 @@ main>section#expect{background:linear-gradient(90deg,#00A5FF 0%,#0043BF 50%,#002
 .hero.hero-f2 h1.sk-h1 span{text-shadow:0 4px 38.4px rgba(0,0,0,.69)!important}
 .hero.hero-f2 .sk-desc{text-shadow:0 4px 21.8px rgba(0,0,0,.25)!important}
 .hero.hero-f2 .hero-video,.hero.hero-f2 .hero-bg{filter:brightness(1.3) contrast(.96)!important}
+
+/* кнопки: заливка расходится кругом от точки, где навели курсор (как у Ветерка) */
+.sk-aware{position:relative;overflow:hidden;isolation:isolate;transition:color .3s ease-in-out,transform .2s!important}
+.sk-aware span{position:relative;z-index:1}
+.sk-aware::before{content:"";position:absolute;left:var(--x,50%);top:var(--y,50%);width:0;height:0;border-radius:50%;background:#CFEAFF;transform:translate(-50%,-50%);transition:width .5s ease-in-out,height .5s ease-in-out;z-index:0}
+.sk-aware:hover::before{width:560px;height:560px}
+.sk-aware:hover{color:#0043BF!important;transform:none!important}
+/* значок Telegram в меню */
+@media (min-width:900px){#head .head-in .tg{display:inline-flex!important;margin-right:-18px}}
