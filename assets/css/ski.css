@@ -469,3 +469,8 @@ main>section#apply{background:linear-gradient(180deg,rgba(4,30,102,.62) 0%,rgba(
 /* программа: абзацы дня идут подряд, без растягивания по высоте */
 .sk-dbody>div{justify-content:center!important;gap:16px!important;padding-block:0!important}
 .sk-dbody small{margin-top:8px!important}
+
+/* маршрут: меньше воздуха сверху, карта крупнее */
+main>section#route.sk-route{padding-top:36px!important;padding-bottom:48px!important}
+.sk-rhead{margin-bottom:22px!important}
+.sk-rgrid{grid-template-columns:minmax(0,1fr) minmax(0,700px)!important;gap:28px!important}
