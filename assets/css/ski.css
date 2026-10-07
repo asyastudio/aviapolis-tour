@@ -311,3 +311,4 @@ main>section#expect{background:linear-gradient(90deg,#00A5FF 0%,#0043BF 50%,#002
 .sk-safe .sk-sgrid{z-index:1}
 .sk-pgrid{grid-template-columns:repeat(2,minmax(0,420px))!important;gap:32px!important}
 .sk-note{max-width:620px;margin-inline:auto!important}
+.sk-pol span,.sk-pol .sk-tag,.sk-pol strong{color:#0A1E40!important;opacity:1!important}
