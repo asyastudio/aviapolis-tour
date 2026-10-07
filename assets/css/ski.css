@@ -296,3 +296,18 @@ main>section#expect{background:linear-gradient(90deg,#00A5FF 0%,#0043BF 50%,#002
 @keyframes skRise{from{opacity:0;transform:translateY(-10px)}to{opacity:1;transform:none}}
 .sk-ground{font-size:clamp(20px,2.4vw,34px)!important;bottom:64px}
 .sk-high{top:-22px!important;left:57%!important}
+
+/* карта: линия полёта проявляется, самолёт летит по маршруту */
+.sk-fmask{stroke-dasharray:1;stroke-dashoffset:1}
+.sk-mapbox.on .sk-fmask{animation:skDraw 4.5s cubic-bezier(.4,0,.3,1) forwards}
+.sk-fly{opacity:0}
+.sk-mapbox.on .sk-fly{opacity:1;transition:opacity .4s}
+@keyframes skDraw{to{stroke-dashoffset:0}}
+@media (prefers-reduced-motion:reduce){.sk-fmask{stroke-dashoffset:0}.sk-mapbox.on .sk-fmask{animation:none}}
+
+/* линия с самолётиком переехала в блок безопасности; стоимость уже, как у Alto */
+.sk-safe{position:relative;overflow:hidden}
+.sk-safe .sk-loop{opacity:.28;z-index:0}
+.sk-safe .sk-sgrid{z-index:1}
+.sk-pgrid{grid-template-columns:repeat(2,minmax(0,420px))!important;gap:32px!important}
+.sk-note{max-width:620px;margin-inline:auto!important}
