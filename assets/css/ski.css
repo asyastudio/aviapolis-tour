@@ -476,3 +476,28 @@ main>section#route.sk-route{padding-top:36px!important;padding-bottom:48px!impor
 .sk-rgrid{grid-template-columns:minmax(0,1fr) minmax(0,700px)!important;gap:28px!important}
 .sk-levels.on .sk-c20{opacity:.3!important}
 .sk-band{background-position:center,center 28%!important}
+
+/* рамка со скрепкой */
+.sk-pol{aspect-ratio:1775/2275!important}
+.sk-ph{left:4.6%!important;top:11.3%!important;width:90.8%!important;height:68.8%!important}
+.sk-pol figcaption{top:80.4%!important}
+
+/* заявка: полоса матового стекла во всю ширину поверх фото, форма в одну строку */
+main>section#apply{padding:clamp(70px,9vw,120px) 0 calc(clamp(70px,9vw,120px) + 80px)!important;background:linear-gradient(180deg,rgba(4,30,102,.30),rgba(3,18,60,.42)),url("../img/ski-footer-hd.webp") center 58%/cover!important}
+.sk-plan{position:relative;background:rgba(19,19,19,.38);-webkit-backdrop-filter:blur(18px);backdrop-filter:blur(18px);padding:clamp(40px,5vw,64px) clamp(16px,4vw,40px);text-align:center;color:#fff}
+.sk-plan h2{font-family:var(--f-accent)!important;font-size:clamp(30px,3.6vw,52px)!important;line-height:1.1;color:#fff!important;margin:0}
+.sk-plan>p{font-size:clamp(16px,1.3vw,19px);line-height:1.4;color:rgba(255,255,255,.9)!important;margin:16px auto 0!important;max-width:640px}
+#apply form#lead{display:grid!important;grid-template-columns:minmax(0,1fr) minmax(0,1fr) auto;gap:20px 32px;align-items:end;max-width:1060px;margin:44px auto 0!important;padding:0!important;background:none!important;border:0!important;border-radius:0!important;box-shadow:none!important;-webkit-backdrop-filter:none!important;backdrop-filter:none!important}
+#apply form#lead input:not([type=checkbox]){width:100%;background:transparent!important;border:0!important;border-bottom:1px solid rgba(255,255,255,.75)!important;border-radius:0!important;box-shadow:none!important;color:#fff!important;font:inherit;font-size:18px;padding:12px 0!important;transition:border-color .25s}
+#apply form#lead input:not([type=checkbox]):hover{background:transparent!important}
+#apply form#lead input:not([type=checkbox]):focus{outline:none!important;background:transparent!important;border-bottom-color:#00A5FF!important;box-shadow:0 1px 0 #00A5FF!important}
+#apply form#lead input::placeholder{color:rgba(255,255,255,.65)!important}
+#apply form#lead button{background:transparent!important;color:#fff!important;border:1px solid #fff!important;border-radius:14px 14px 14px 0!important;box-shadow:none!important;font:inherit;font-size:18px;font-weight:400;padding:13px 40px;cursor:pointer;min-width:190px}
+#apply form#lead button.sk-aware::before{background:#fff}
+#apply form#lead button:hover{background:transparent!important;color:#0043BF!important}
+.sk-agree{grid-column:1/-1;display:flex;align-items:center;gap:14px;font-size:14px;color:rgba(255,255,255,.9)!important;text-align:left;cursor:pointer}
+.sk-agree input{appearance:none;-webkit-appearance:none;flex:none;width:24px;height:24px;margin:0;border:1.5px solid rgba(255,255,255,.8);border-radius:6px 6px 6px 0;background:transparent;cursor:pointer;position:relative}
+.sk-agree input:checked{background:#fff}
+.sk-agree input:checked::after{content:"";position:absolute;left:7px;top:3px;width:6px;height:11px;border-right:2px solid #0043BF;border-bottom:2px solid #0043BF;transform:rotate(45deg)}
+#apply form#lead .ok{grid-column:1/-1;text-align:left;margin:0}
+@media (max-width:820px){#apply form#lead{grid-template-columns:minmax(0,1fr)}#apply form#lead button{width:100%}}
