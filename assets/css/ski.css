@@ -613,3 +613,21 @@ main>section#apply{min-height:0!important;padding:clamp(40px,4.4vw,60px) clamp(1
 #apply form#lead button{padding:14px 30px!important;font-size:17px!important}
 footer{margin-top:-70px!important}
 main>section#apply{background:linear-gradient(180deg,rgba(19,19,19,0) 0%,rgba(19,19,19,.04) 62%,rgba(19,19,19,.38) 100%),url("../img/ski-footer-hd4.webp") 100% 62%/cover!important}
+
+/* ===== облегчение страницы: убраны тяжёлые фильтры, режимы наложения и живой шум ===== */
+/* видео в шапке без CSS-фильтра: осветление лёгкой белой вуалью */
+.hero.hero-f2 .hero-video,.hero.hero-f2 .hero-bg{filter:none!important}
+.hero.hero-f2::after{background:linear-gradient(rgba(255,255,255,.13),rgba(255,255,255,.13)),linear-gradient(180deg,rgba(2,14,50,.30) 0%,rgba(2,14,50,0) 26%,rgba(2,14,50,0) 70%,rgba(2,14,50,.20) 100%)!important}
+/* самолёт: готовая светлая картинка вместо фильтра и color-dodge */
+.sk-c20,.sk-levels.on .sk-c20{filter:none!important;mix-blend-mode:normal!important;opacity:.22!important}
+/* зерно: маленькая картинка-плитка вместо SVG-шума, без режимов наложения */
+.sk-what::after{background:url("../img/ski-grain.png")!important;mix-blend-mode:normal!important;opacity:.55!important}
+main>section#apply::after{background:url("../img/ski-grain.png")!important;mix-blend-mode:normal!important;opacity:.5!important}
+/* стекло в безопасности: за карточками нечего размывать */
+.sk-glass{-webkit-backdrop-filter:none!important;backdrop-filter:none!important;background:rgba(255,255,255,.55)!important}
+/* полароиды: обычная тень вместо drop-shadow по картинке */
+.sk-pol,.sk-pol:hover{filter:none!important;will-change:auto!important}
+.sk-pol::before{content:"";position:absolute;left:0;right:0;top:4.2%;bottom:0;box-shadow:0 20px 30px rgba(0,20,80,.30);pointer-events:none;z-index:-1}
+/* точки «печатает» не крутятся вечно */
+.sk-typing i{animation-iteration-count:3!important}
+.sk-cloud{will-change:auto}
