@@ -650,3 +650,7 @@ main>section#apply{background:linear-gradient(180deg,rgba(19,19,19,0) 0%,rgba(19
 .sk-pol:hover{translate:0 -5px;z-index:auto!important}
 .sk-pol:hover .sk-ph img,.sk-pol:hover .sk-ph video{transform:none!important}
 @media (max-width:1000px){.sk-pol.p1:hover{transform:rotate(3deg)!important}.sk-pol.p2:hover,.sk-pol.p4:hover{transform:rotate(-2deg) translateY(16px)!important}.sk-pol.p3:hover{transform:none!important}}
+
+/* вместо фото самолёта лёгкий чертёж-схема С-20 */
+.sk-c20,.sk-levels.on .sk-c20{width:min(640px,46vw)!important;right:-60px!important;top:6px!important;opacity:.34!important;transform:rotate(-6deg)!important;filter:none!important;mix-blend-mode:normal!important}
+@media (max-width:1000px){.sk-c20,.sk-levels.on .sk-c20{right:auto!important;top:auto!important;width:min(420px,84%)!important;transform:none!important}}
