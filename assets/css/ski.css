@@ -554,3 +554,10 @@ main>section#apply::before{display:none!important}
 .sk-feats i{border-radius:18px!important}
 .sk-day summary em{border-radius:10px!important}
 .sk-dbody img{border-radius:20px!important}
+
+/* скрепка меньше; самолёт под «Этот с высоты» крупнее и прозрачнее */
+.sk-pol{aspect-ratio:1775/2231!important}
+.sk-ph{left:4.6%!important;top:9.6%!important;width:90.8%!important;height:70.1%!important}
+.sk-pol figcaption{top:80%!important}
+.sk-c20{width:min(800px,56vw)!important;right:-290px!important;top:-58px!important}
+.sk-levels.on .sk-c20{opacity:.2!important}
