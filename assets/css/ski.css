@@ -776,3 +776,17 @@ main>section#apply{background:linear-gradient(180deg,#B4DCFF 0,rgba(180,220,255,
   .sk-band .sk-btext{font-size:17px!important;line-height:1.45!important;text-wrap:balance}
   .sk-safe .sk-glass li,.sk-safe p{text-wrap:pretty}
 }
+
+/* телефон/планшет: чертёж С-20 фоном, места не занимает */
+@media (max-width:1000px){
+  .sk-levels{position:relative!important}
+  .sk-c20,.sk-levels.on .sk-c20{position:absolute!important;left:50%!important;right:auto!important;top:-18px!important;width:min(360px,92%)!important;margin:0!important;transform:translateX(-50%) rotate(-8deg)!important;opacity:.3!important;pointer-events:none;z-index:0}
+  .sk-levels>.sk-ground,.sk-levels>.sk-high{position:relative;z-index:1}
+  .sk-levels{margin-bottom:34px!important}
+}
+@media (max-width:1000px){
+  .sk-levels{isolation:isolate}
+  .sk-levels>.sk-ground,.sk-levels>.sk-high{position:static!important}
+  .sk-c20,.sk-levels.on .sk-c20{z-index:-1!important}
+}
+@media (max-width:1000px){.sk-c20,.sk-levels.on .sk-c20{opacity:.4!important}}
