@@ -162,3 +162,9 @@
 .sk-msg.in{color:#0A1E40!important}.sk-msg.out{color:#fff!important}
 .sk-band,.sk-btext{color:#fff!important}
 .sk-loop{opacity:.5}
+.sk-why,.sk-prog,.sk-price{background-image:none!important}
+main>section#why,main>section#program,main>section#price{background:#F3F8FF!important}
+main>section#why{padding:0!important}
+main>section#safety{background:linear-gradient(180deg,#CEEAFF,#ECF6FF)!important}
+main>section#route{background:#062C8F!important}
+main>section#expect{background:linear-gradient(90deg,#00A5FF 0%,#0043BF 50%,#002078 100%)!important}
