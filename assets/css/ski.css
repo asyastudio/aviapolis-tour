@@ -593,3 +593,9 @@ main>section#apply{background:linear-gradient(180deg,rgba(19,19,19,0) 0%,rgba(19
 #apply form#lead input:not([type=checkbox]){padding:18px 20px!important;font-size:18px!important}
 #apply form#lead button{padding:18px 36px!important;font-size:18px!important}
 @media (max-width:1000px){.sk-motto{position:static!important;margin:0 auto 28px!important;max-width:580px}#apply>.sk-plan>*,#apply>.sk-plan::before{margin-inline:auto!important;left:0!important;right:0!important}#apply form#lead{margin-inline:auto!important}}
+
+/* описание в плашке заявки стоит в плашке, а не слева */
+#apply>.sk-plan>p{margin:14px 0 0 auto!important}
+/* самолёт во втором блоке статичный, без появления */
+.sk-c20,.sk-levels.on .sk-c20{opacity:.2!important;transform:rotate(-15deg)!important;transition:none!important}
+@media (max-width:1000px){.sk-c20,.sk-levels.on .sk-c20{transform:none!important}#apply>.sk-plan>p{margin-inline:auto!important}}
