@@ -706,3 +706,6 @@ main>section#safety.sk-safe{background:linear-gradient(180deg,#DDF0FF 0%,#C9E6FF
 main>section#price.sk-price{background:linear-gradient(180deg,#C9E6FF 0%,#B4DCFF 100%)!important;border:0!important}
 .sk-price::after{display:none!important}
 .sk-price::before{opacity:.5!important;background:url("../img/ski-cloud.webp") right -16% bottom -170px/62% auto no-repeat!important}
+
+/* фраза: без резкой синей полосы, продолжает фон стоимости */
+.sk-mottobar{background:linear-gradient(180deg,#B4DCFF 0%,#A9D6FF 100%)!important;color:#0A1E40!important;padding:10px clamp(16px,4vw,40px) 44px!important}
