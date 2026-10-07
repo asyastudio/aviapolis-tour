@@ -341,3 +341,16 @@ main>section#expect{background:linear-gradient(90deg,#00A5FF 0%,#0043BF 50%,#002
 .sk-stages em{font-weight:400!important;color:#fff!important;opacity:.8;font-size:14px!important}
 .sk-link{color:#0043BF!important;text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:4px;transition:color .2s}
 .sk-link:hover{color:#00A5FF!important}
+
+/* безопасность: заголовок в три строки как было, карточки шире, самолётик виден; стоимость компактнее */
+.sk-nobal{text-wrap:wrap!important}
+.sk-safe .sk-loop{opacity:1!important}
+.sk-sgrid{grid-template-columns:minmax(0,400fr) minmax(0,376fr) minmax(0,376fr)!important}
+.sk-sgrid>div:first-child{padding-right:20px!important}
+.sk-glass{padding:30px 32px!important}
+.sk-price{padding-block:clamp(44px,5vw,64px)!important}
+.sk-price h2{font-size:clamp(28px,3.1vw,44px)!important}
+.sk-note{font-size:16px!important;margin-top:12px!important}
+.sk-pgrid{margin-top:32px!important}
+.sk-btn{margin-top:32px!important;height:50px!important}
+.sk-pcol summary{padding:13px 0!important;font-size:16px!important}
