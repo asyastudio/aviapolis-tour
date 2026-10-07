@@ -700,3 +700,9 @@ main>section#price.sk-price{background:linear-gradient(180deg,#A4D5FF 0%,#5FB4FF
 .sk-pl{display:none!important}
 /* самолётик в конце линии безопасности остаётся */
 @media (min-width:1001px){.sk-pl{display:block!important}}
+
+/* стоимость: светлее, без линии, без облака у верхнего края; плавный переход от безопасности */
+main>section#safety.sk-safe{background:linear-gradient(180deg,#DDF0FF 0%,#C9E6FF 100%)!important;border:0!important}
+main>section#price.sk-price{background:linear-gradient(180deg,#C9E6FF 0%,#B4DCFF 100%)!important;border:0!important}
+.sk-price::after{display:none!important}
+.sk-price::before{opacity:.5!important;background:url("../img/ski-cloud.webp") right -16% bottom -170px/62% auto no-repeat!important}
