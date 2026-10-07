@@ -27,10 +27,9 @@
   <video class="hero-video" autoplay muted loop playsinline preload="metadata" poster="assets/img/ski-hero-poster.jpg"><source src="assets/video/ski-hero.mp4" type="video/mp4"></video>
   <div class="wrap hero-main">
     <p class="sk-facts"><span>3 дня / 2 ночи</span><span>5 мест</span><span>6 самолётов С-20</span></p>
-    <h1>Полёт на лыжах<br><span class="h1-big">Урал</span></h1>
-    <p class="hero-desc">Три дня на Южном Урале. Шесть самолётов С-20 на лыжном шасси, час сорок над хребтами, склоны Абзаково, баня и вечера с пилотами</p>
-    <div class="hero-links"><a class="btn hero-cta" href="#apply">Забронировать место</a></div>
-    <div class="hero-links" style="margin-top:26px!important"><a class="hero-link" href="#route">Маршрут кратко</a><a class="hero-link" href="#program">Программа подробнее</a></div>
+    <h1 class="sk-h1">Полёт на лыжах<span>Урал</span></h1>
+    <p class="hero-desc sk-desc">Три дня на Южном Урале. Шесть самолётов С-20 на лыжном шасси, час сорок над хребтами, склоны Абзаково, баня и вечера с пилотами</p>
+    <a class="sk-cta" href="#apply">Забронировать место</a>
   </div>
 </header>
 <main>
@@ -140,6 +139,7 @@
 var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('on');io.unobserve(e.target)}})},{threshold:.45});els.forEach(function(e){io.observe(e)});
 var ds=document.querySelectorAll('.sk-day');ds.forEach(function(d){d.addEventListener('toggle',function(){if(d.open)ds.forEach(function(o){if(o!==d)o.open=false})})})})();
 </script>
+<script>(function(){var v=document.querySelector('.hero-f2 .hero-video');if(!v)return;function t(){var d=v.duration||0;v.classList.toggle('on',v.currentTime>.12&&(!d||v.currentTime<d-.7))}v.addEventListener('timeupdate',t);v.addEventListener('playing',t)})();</script>
 <script src="assets/js/tour.js" defer></script>
 </body>
 </html>
