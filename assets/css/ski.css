@@ -816,3 +816,9 @@ main>section#apply{background:linear-gradient(180deg,#B4DCFF 0,rgba(180,220,255,
   .sk-feats>div>h3{font-size:16px!important;margin-top:2px!important}
   .sk-feats>div>p{font-size:14px!important}
 }
+
+/* iPhone: фон шапки доходит до самого верха экрана (под статус-бар), а не начинается ниже него */
+@media (max-width:900px){
+  .head{padding-top:0!important}
+  .head .head-in{padding-top:env(safe-area-inset-top,0px)!important;height:auto!important;box-sizing:border-box}
+}
