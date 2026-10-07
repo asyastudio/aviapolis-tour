@@ -461,3 +461,7 @@ main>section#price{background:linear-gradient(180deg,#ECF6FF,#DCEDFF)!important}
 /* подвал: широкое фото склона с киношной цветокоррекцией под заявкой и подвалом */
 main>section#apply{background:linear-gradient(180deg,rgba(4,30,102,.72) 0%,rgba(4,30,102,.5) 45%,rgba(3,18,60,.78) 100%),url("../img/ski-footer.webp") center 62%/cover!important;padding-bottom:calc(clamp(56px,8vw,100px) + 80px)!important}
 main+footer,footer{position:relative;margin-top:-80px;background:transparent!important;border:0!important;color:rgba(255,255,255,.85)!important}
+
+/* новые имена файлов, чтобы браузер не показывал старые размытые версии из кэша */
+main>section#apply{background:linear-gradient(180deg,rgba(4,30,102,.62) 0%,rgba(4,30,102,.38) 45%,rgba(3,18,60,.72) 100%),url("../img/ski-footer-hd.webp") center 58%/cover!important}
+.sk-band{background:linear-gradient(180deg,rgba(19,19,19,.05) 0%,rgba(19,19,19,.5) 35%,rgba(19,19,19,.58) 100%),url("../img/ski-resort-hd.webp") center/cover!important}
