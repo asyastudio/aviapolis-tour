@@ -517,3 +517,9 @@ main>section#apply::before{content:"";position:absolute;left:0;right:0;top:clamp
 #apply form#lead button.sk-aware::before{background:#CFEAFF}
 #apply form#lead button:hover{background:#fff!important;color:#0043BF!important}
 .hero.hero-f2 h1.sk-h1 span{font-size:1em!important;margin-top:.14em!important}
+
+/* шапка по текущему макету: «Урал» того же размера с разрядкой 8%, кнопка сразу под заголовком, описание ниже */
+.hero.hero-f2 h1.sk-h1 span{font-size:1em!important;letter-spacing:.08em!important;margin-top:.139em!important;color:#F0FAFF!important}
+.hero.hero-f2 .sk-cta{margin-top:49px!important}
+.hero.hero-f2 .sk-desc{margin:62px auto 0!important}
+@media (max-width:900px){.hero.hero-f2 .sk-cta{margin-top:32px!important}.hero.hero-f2 .sk-desc{margin-top:36px!important}}
