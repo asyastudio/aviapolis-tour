@@ -612,3 +612,4 @@ main>section#apply{min-height:0!important;padding:clamp(40px,4.4vw,60px) clamp(1
 #apply form#lead input:not([type=checkbox]){padding:14px 18px!important;font-size:17px!important}
 #apply form#lead button{padding:14px 30px!important;font-size:17px!important}
 footer{margin-top:-70px!important}
+main>section#apply{background:linear-gradient(180deg,rgba(19,19,19,0) 0%,rgba(19,19,19,.04) 62%,rgba(19,19,19,.38) 100%),url("../img/ski-footer-hd4.webp") 100% 62%/cover!important}
