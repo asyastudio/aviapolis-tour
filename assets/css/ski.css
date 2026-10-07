@@ -359,3 +359,21 @@ main>section#expect{background:linear-gradient(90deg,#00A5FF 0%,#0043BF 50%,#002
 .sk-sgrid>div:first-child{padding-right:12px!important}
 .sk-safe h2{font-size:clamp(26px,2.8vw,40px)!important;white-space:nowrap}
 @media (max-width:1000px){.sk-safe h2{white-space:normal}}
+
+/* безопасность: размытый силуэт С-20 вместо значка */
+.sk-ghost{position:absolute;right:4%;top:-46px;width:min(360px,30vw);transform:rotate(-28deg);filter:blur(10px);opacity:.9;pointer-events:none;z-index:0}
+.sk-stages i svg,.sk-feats i svg{fill:currentColor}
+
+/* заявка: жидкое стекло */
+main>section#apply{background:linear-gradient(160deg,rgba(0,67,191,.80),rgba(4,30,102,.90)),url("../img/ski-view.webp") center/cover!important;position:relative;overflow:hidden}
+#apply form#lead{background:linear-gradient(145deg,rgba(255,255,255,.22),rgba(255,255,255,.08))!important;border:1px solid rgba(255,255,255,.38)!important;border-radius:30px!important;-webkit-backdrop-filter:blur(26px) saturate(1.5);backdrop-filter:blur(26px) saturate(1.5);box-shadow:inset 0 1px 0 rgba(255,255,255,.55),inset 0 -1px 0 rgba(255,255,255,.12),0 30px 70px rgba(0,16,60,.35)!important;color:#fff!important;position:relative}
+#apply form#lead::before{content:"";position:absolute;inset:0;border-radius:inherit;background:radial-gradient(120% 60% at 12% 0%,rgba(255,255,255,.30),rgba(255,255,255,0) 60%);pointer-events:none}
+#apply form#lead label{color:rgba(255,255,255,.86)!important;position:relative}
+#apply form#lead input,#apply form#lead select{background:rgba(255,255,255,.14)!important;border:1px solid rgba(255,255,255,.30)!important;color:#fff!important;border-radius:16px!important;box-shadow:inset 0 1px 0 rgba(255,255,255,.25)!important;transition:background .25s,border-color .25s,box-shadow .25s}
+#apply form#lead input::placeholder{color:rgba(255,255,255,.6)!important}
+#apply form#lead input:hover,#apply form#lead select:hover{background:rgba(255,255,255,.2)!important}
+#apply form#lead input:focus,#apply form#lead select:focus{outline:none!important;background:rgba(255,255,255,.24)!important;border-color:#fff!important;box-shadow:0 0 0 4px rgba(255,255,255,.18),inset 0 1px 0 rgba(255,255,255,.3)!important}
+#apply form#lead select option{color:#0A1E40}
+#apply form#lead button{background:#fff!important;color:#0043BF!important;border-radius:16px!important;box-shadow:0 10px 24px rgba(0,16,60,.25);position:relative}
+#apply form#lead button:hover{background:#CFEAFF!important}
+#apply form#lead .ok{color:#fff!important}
