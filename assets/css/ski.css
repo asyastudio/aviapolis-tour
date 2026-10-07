@@ -679,3 +679,7 @@ main>section#apply{background:linear-gradient(180deg,rgba(19,19,19,0) 0%,rgba(19
 /* безопасность и стоимость: заметно голубее, единый градиент */
 main>section#safety{background:linear-gradient(180deg,#CDE9FF 0%,#A4D5FF 100%)!important}
 main>section#price{background:linear-gradient(180deg,#A4D5FF 0%,#5FB4FF 100%)!important}
+
+/* «Этот с высоты»: облако прозрачнее, чуть больше воздуха сверху и снизу */
+.sk-cloud.c1{opacity:.58!important}
+.sk-what{padding-block:calc(clamp(56px,7vw,90px) + 26px) calc(clamp(64px,8vw,104px) + 26px)!important}
