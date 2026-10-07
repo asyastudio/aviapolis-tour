@@ -432,3 +432,5 @@ main>section#apply{background:linear-gradient(180deg,rgba(0,67,191,.86),rgba(4,3
 
 /* стоимость: не белый, а спокойный голубой */
 main>section#price{background:linear-gradient(180deg,#ECF6FF,#DCEDFF)!important}
+.sk-ph video{display:block;width:100%;height:100%;object-fit:cover;transition:transform .6s}
+.sk-pol:hover .sk-ph video{transform:scale(1.04)}
