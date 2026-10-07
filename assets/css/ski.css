@@ -516,3 +516,4 @@ main>section#apply::before{content:"";position:absolute;left:0;right:0;top:clamp
 #apply form#lead button{background:#fff!important;color:#0043BF!important;border:0!important;border-radius:14px 14px 14px 0!important;font-weight:700;font-size:17px;padding:15px 36px;min-width:210px}
 #apply form#lead button.sk-aware::before{background:#CFEAFF}
 #apply form#lead button:hover{background:#fff!important;color:#0043BF!important}
+.hero.hero-f2 h1.sk-h1 span{font-size:1em!important;margin-top:.14em!important}
