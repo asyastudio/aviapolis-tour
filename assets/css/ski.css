@@ -822,3 +822,4 @@ main>section#apply{background:linear-gradient(180deg,#B4DCFF 0,rgba(180,220,255,
   .head{padding-top:0!important}
   .head .head-in{padding-top:env(safe-area-inset-top,0px)!important;height:auto!important;box-sizing:border-box}
 }
+@media (max-width:900px){.head .head-in{height:calc(69px + env(safe-area-inset-top,0px))!important}}
