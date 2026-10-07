@@ -661,3 +661,7 @@ main>section#price{background:linear-gradient(180deg,#C3E4FF 0%,#9CD1FF 100%)!im
 .sk-pcol,.sk-pcol details{border-color:rgba(10,30,64,.28)!important}
 main>section#apply{background:linear-gradient(180deg,rgba(19,19,19,0) 0%,rgba(19,19,19,.02) 66%,rgba(19,19,19,.30) 100%),url("../img/ski-footer-hd6.webp") 100% 62%/cover!important}
 main>section#apply{background:linear-gradient(180deg,rgba(19,19,19,0) 0%,rgba(19,19,19,.02) 66%,rgba(19,19,19,.30) 100%),url("../img/ski-footer-hd7.webp") 100% 62%/cover!important}
+
+/* чертёж С-20 линиями, сделан по нашему фото */
+.sk-c20,.sk-levels.on .sk-c20{width:min(700px,50vw)!important;right:-90px!important;top:-36px!important;opacity:.42!important;transform:rotate(-4deg)!important}
+@media (max-width:1000px){.sk-c20,.sk-levels.on .sk-c20{right:auto!important;top:auto!important;width:min(440px,88%)!important;transform:none!important}}
