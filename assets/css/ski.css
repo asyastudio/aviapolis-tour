@@ -698,3 +698,5 @@ main>section#safety.sk-safe{background:linear-gradient(180deg,#CDE9FF 0%,#A4D5FF
 main>section#price.sk-price{background:linear-gradient(180deg,#A4D5FF 0%,#5FB4FF 100%)!important}
 /* линия в безопасности тает к краям, самолётик в конце убран вместе с резким обрывом */
 .sk-pl{display:none!important}
+/* самолётик в конце линии безопасности остаётся */
+@media (min-width:1001px){.sk-pl{display:block!important}}
