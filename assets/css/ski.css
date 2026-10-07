@@ -336,3 +336,5 @@ main>section#expect{background:linear-gradient(90deg,#00A5FF 0%,#0043BF 50%,#002
 .sk-aware:hover{color:#0043BF!important;transform:none!important}
 /* значок Telegram в меню */
 @media (min-width:900px){#head .head-in .tg{display:inline-flex!important;margin-right:-18px}}
+.sk-band{padding-top:140px!important}
+.sk-band::before{height:140px!important}
