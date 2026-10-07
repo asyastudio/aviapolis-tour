@@ -144,7 +144,7 @@ var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isInter
 function anim(d,from,to,done){var fin=false,a;function end(){if(fin)return;fin=true;d.style.overflow='';try{a.cancel()}catch(e){}done&&done()}d.style.overflow='hidden';a=d.animate({height:[from+'px',to+'px']},{duration:520,easing:'cubic-bezier(.4,0,.2,1)'});a.onfinish=end;setTimeout(end,760)}
 function openD(d){var h0=d.offsetHeight;d.open=true;var h1=d.offsetHeight;anim(d,h0,h1)}
 function closeD(d){if(!d.open||d.classList.contains('closing'))return;var h1=d.offsetHeight,s=d.querySelector('summary'),h0=s.offsetHeight+(d.offsetHeight-d.clientHeight);d.classList.add('closing');anim(d,h1,h0,function(){d.open=false;d.classList.remove('closing')})}
-document.querySelectorAll('.sk-day,.sk-pcol details').forEach(function(d){d.querySelector('summary').addEventListener('click',function(e){e.preventDefault();if(d.style.overflow==='hidden')return;if(d.open){closeD(d)}else{if(d.classList.contains('sk-day'))document.querySelectorAll('.sk-day[open]').forEach(function(o){if(o!==d)closeD(o)});openD(d)}})})})();
+document.querySelectorAll('.sk-day,.sk-pcol details').forEach(function(d){d.querySelector('summary').addEventListener('click',function(e){e.preventDefault();if(d.style.overflow==='hidden')return;if(d.open){closeD(d)}else{openD(d)}})})})();
 </script>
 <script src="assets/js/tour.js" defer></script>
 </body>
