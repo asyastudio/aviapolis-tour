@@ -474,3 +474,4 @@ main>section#apply{background:linear-gradient(180deg,rgba(4,30,102,.62) 0%,rgba(
 main>section#route.sk-route{padding-top:36px!important;padding-bottom:48px!important}
 .sk-rhead{margin-bottom:22px!important}
 .sk-rgrid{grid-template-columns:minmax(0,1fr) minmax(0,700px)!important;gap:28px!important}
+.sk-levels.on .sk-c20{opacity:.3!important}
