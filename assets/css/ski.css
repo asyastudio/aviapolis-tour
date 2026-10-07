@@ -319,3 +319,5 @@ main>section#expect{background:linear-gradient(90deg,#00A5FF 0%,#0043BF 50%,#002
 .sk-c20{width:min(573px,40vw)!important;right:-174px!important;top:-13px!important;mix-blend-mode:color-dodge;filter:grayscale(.99) brightness(.9) contrast(.9)!important;transform:translate(-90px,40px) rotate(-15deg)}
 .sk-levels.on .sk-c20{opacity:.64!important;transform:rotate(-15deg)!important}
 @media (max-width:1000px){.sk-c20{right:auto!important;top:auto!important;width:min(420px,80%)!important}.sk-levels.on .sk-c20{transform:none!important}}
+.sk-safe .sk-loop{opacity:.14!important}
+.sk-safe .sk-loop path:first-child{stroke-width:1.2px}
