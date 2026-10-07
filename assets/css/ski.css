@@ -385,3 +385,6 @@ main>section#apply{background:linear-gradient(160deg,rgba(0,67,191,.80),rgba(4,3
 .sk-pl{position:absolute;left:87.6%;top:8.1%;width:54px;height:54px;margin:-27px 0 0 -6px;transform:rotate(-4deg) translateX(-30px);opacity:0;transition:opacity .5s 2s,transform .9s 2s cubic-bezier(.2,.8,.2,1);pointer-events:none;z-index:0}
 .sk-loop.on~.sk-pl{opacity:.6;transform:rotate(-4deg)}
 @media (max-width:1000px){.sk-pl{display:none}}
+.sk-cloud.c2{opacity:.32!important}
+.sk-c20{width:min(690px,48vw)!important;right:-230px!important;top:-34px!important}
+.sk-levels.on .sk-c20{opacity:.5!important}
