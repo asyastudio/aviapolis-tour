@@ -754,3 +754,25 @@ main>section#apply{background:linear-gradient(180deg,#B4DCFF 0,rgba(180,220,255,
   .sk-stages{display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px!important}
 }
 @media (max-width:700px){.sk-stages{grid-template-columns:minmax(0,1fr)}}
+
+/* телефон: плотнее и аккуратнее */
+@media (max-width:620px){
+  main>section.sk-what{padding:56px 0 64px!important}
+  .sk-levels{margin-bottom:22px!important;gap:10px!important}
+  .sk-c20,.sk-levels.on .sk-c20{width:250px!important;margin:4px auto 0!important;opacity:.5!important}
+  .sk-pols{gap:22px 10px!important}
+  .sk-lead{margin-top:44px!important;font-size:18px!important;line-height:1.4!important}
+  .sk-lead br,.sk-ground br{display:none}
+  .sk-feats{gap:22px!important;margin-top:40px!important}
+  .sk-feats>div{display:grid!important;grid-template-columns:52px minmax(0,1fr);column-gap:14px;row-gap:4px;text-align:left!important;align-items:start}
+  .sk-feats>div>i{grid-row:1/3;margin:0!important;width:52px!important;height:52px!important}
+  .sk-feats>div>h3{margin:4px 0 0!important;font-size:18px!important}
+  .sk-feats>div>p{margin:0!important;font-size:15px!important;line-height:1.4!important;max-width:none!important}
+  .sk-day summary{padding:16px!important;gap:10px!important}
+  .sk-day summary b{font-size:17px!important;line-height:1.2!important}
+  .sk-dbody{gap:16px!important;padding:0 16px 18px!important}
+  .sk-dbody p{font-size:16px!important;line-height:1.5!important;text-wrap:pretty}
+  .sk-band{padding:96px 0 40px!important}
+  .sk-band .sk-btext{font-size:17px!important;line-height:1.45!important;text-wrap:balance}
+  .sk-safe .sk-glass li,.sk-safe p{text-wrap:pretty}
+}
