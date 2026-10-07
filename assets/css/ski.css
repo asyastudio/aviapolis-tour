@@ -284,3 +284,13 @@ main>section#expect{background:linear-gradient(90deg,#00A5FF 0%,#0043BF 50%,#002
   #head .head-in nav a,#head .head-contact{font-size:17px!important;opacity:1!important;text-decoration:none;white-space:nowrap}
   #head .head-in .tg{display:none!important}
 }
+
+/* плавное раскрытие списков программы и стоимости */
+.sk-day[open] .sk-dbody,.sk-pcol details[open] ul{animation:skRise .55s cubic-bezier(.3,.7,.2,1) both}
+.sk-day.closing .sk-dbody,.sk-pcol details.closing ul{animation:none;opacity:0;transition:opacity .28s}
+.sk-day.closing summary i{transform:none!important}
+.sk-pcol details.closing summary i{transform:none!important}
+.sk-day summary i,.sk-pcol summary i{transition:transform .45s cubic-bezier(.4,0,.2,1)}
+.sk-day{transition:box-shadow .3s}
+.sk-day:hover{box-shadow:0 16px 40px rgba(0,67,191,.13)}
+@keyframes skRise{from{opacity:0;transform:translateY(-10px)}to{opacity:1;transform:none}}
