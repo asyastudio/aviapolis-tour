@@ -631,3 +631,9 @@ main>section#apply::after{background:url("../img/ski-grain.png")!important;mix-b
 /* точки «печатает» не крутятся вечно */
 .sk-typing i{animation-iteration-count:3!important}
 .sk-cloud{will-change:auto}
+
+/* подвал: фото светлее, лес зеленее; форма длиннее */
+main>section#apply{background:linear-gradient(180deg,rgba(19,19,19,0) 0%,rgba(19,19,19,.03) 62%,rgba(19,19,19,.34) 100%),url("../img/ski-footer-hd5.webp") 100% 62%/cover!important}
+#apply>.sk-plan::before{width:min(660px,100%)!important}
+#apply>.sk-plan>*{width:min(660px,100%)!important}
+#apply form#lead{max-width:min(660px,100%)!important}
