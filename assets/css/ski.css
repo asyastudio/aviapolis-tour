@@ -823,3 +823,6 @@ main>section#apply{background:linear-gradient(180deg,#B4DCFF 0,rgba(180,220,255,
   .head .head-in{padding-top:env(safe-area-inset-top,0px)!important;height:auto!important;box-sizing:border-box}
 }
 @media (max-width:900px){.head .head-in{height:calc(69px + env(safe-area-inset-top,0px))!important}}
+
+/* телефон: на первом экране только 2 плашки, без самолётов */
+@media (max-width:620px){.hero.hero-f2 .sk-facts span:nth-child(3){display:none!important}}
