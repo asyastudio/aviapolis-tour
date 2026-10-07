@@ -709,3 +709,9 @@ main>section#price.sk-price{background:linear-gradient(180deg,#C9E6FF 0%,#B4DCFF
 
 /* фраза: без резкой синей полосы, продолжает фон стоимости */
 .sk-mottobar{background:linear-gradient(180deg,#B4DCFF 0%,#A9D6FF 100%)!important;color:#0A1E40!important;padding:10px clamp(16px,4vw,40px) 44px!important}
+
+/* волосяные щели между блоками (дробная высота) и зерно в футере тише */
+main>section#price.sk-price{margin-top:-1px!important}
+.sk-mottobar{margin-top:-1px!important;position:relative}
+main>section#apply{margin-top:-1px!important}
+main>section#apply::after{opacity:.14!important}
