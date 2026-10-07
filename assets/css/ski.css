@@ -574,3 +574,9 @@ main>section#apply::before{display:none!important}
 #apply form#lead .sk-agree input[type=checkbox]:checked::after{content:"";position:absolute;left:5.5px;top:1.5px;width:5px;height:10px;border-right:2px solid #0043BF;border-bottom:2px solid #0043BF;transform:rotate(45deg)}
 #apply form#lead .sk-agree input[type=checkbox]:focus-visible{outline:2px solid #fff;outline-offset:2px}
 .sk-agree{gap:12px!important;font-size:14px;line-height:1.3}
+
+/* подвал: фото светлее, поверх зерно */
+main>section#apply{background:linear-gradient(180deg,rgba(19,19,19,0) 0%,rgba(19,19,19,.04) 62%,rgba(19,19,19,.38) 100%),url("../img/ski-footer-hd2.webp") 0% 62%/cover!important}
+main>section#apply::after{content:"";position:absolute;inset:0;pointer-events:none;z-index:0;opacity:.42;mix-blend-mode:overlay;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+#apply>.sk-plan,#apply>.sk-motto,#apply>.sk-fline{z-index:1}
+#apply>.sk-plan{position:relative}
