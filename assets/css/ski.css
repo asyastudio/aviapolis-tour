@@ -436,3 +436,15 @@ main>section#price{background:linear-gradient(180deg,#ECF6FF,#DCEDFF)!important}
 .sk-pol:hover .sk-ph video{transform:scale(1.04)}
 .sk-link{color:#0A1E40!important}
 .sk-link:hover{color:#0043BF!important}
+
+/* маршрут: блок ниже */
+.sk-route{padding-block:clamp(40px,4.4vw,60px)!important}
+.sk-rhead{margin-bottom:28px!important}
+.sk-rhead h2{font-size:clamp(28px,3vw,42px)!important}
+.sk-rgrid{grid-template-columns:minmax(0,1fr) minmax(0,560px)!important;gap:32px!important}
+.sk-stages{gap:8px!important}
+.sk-stages li{padding:11px 16px!important}
+.sk-stages i{width:42px!important;height:42px!important}
+.sk-stages b{font-size:18px!important}
+.sk-stages span{font-size:14.5px!important}
+@media (max-width:1000px){.sk-rgrid{grid-template-columns:minmax(0,1fr)!important}}
