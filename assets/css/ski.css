@@ -377,3 +377,11 @@ main>section#apply{background:linear-gradient(160deg,rgba(0,67,191,.80),rgba(4,3
 #apply form#lead button{background:#fff!important;color:#0043BF!important;border-radius:16px!important;box-shadow:0 10px 24px rgba(0,16,60,.25);position:relative}
 #apply form#lead button:hover{background:#CFEAFF!important}
 #apply form#lead .ok{color:#fff!important}
+.sk-ghost{right:9%!important;top:34px!important;width:min(380px,32vw)!important;fill:#2F8FFF!important;opacity:.55!important;filter:blur(9px)!important;transform:rotate(-28deg)}
+.sk-ghost *{fill:#2F8FFF}
+
+/* безопасность: самолётик отдельным элементом в конце линии, всегда в кадре */
+.sk-ghost{display:none!important}
+.sk-pl{position:absolute;left:87.6%;top:8.1%;width:54px;height:54px;margin:-27px 0 0 -6px;transform:rotate(-4deg) translateX(-30px);opacity:0;transition:opacity .5s 2s,transform .9s 2s cubic-bezier(.2,.8,.2,1);pointer-events:none;z-index:0}
+.sk-loop.on~.sk-pl{opacity:.6;transform:rotate(-4deg)}
+@media (max-width:1000px){.sk-pl{display:none}}
