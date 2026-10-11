@@ -78,6 +78,9 @@ ul{list-style:none}
 .day+.day{margin-top:58px}
 .day.flip{grid-template-columns:1fr 636px;gap:36px;padding-left:8px}
 .day.flip .day-ph{order:2}
+.days-more{display:grid;grid-template-rows:0fr;opacity:0;transition:grid-template-rows .8s cubic-bezier(.4,0,.2,1),opacity .6s ease}
+.days-more.open{grid-template-rows:1fr;opacity:1}
+.days-more>div{overflow:hidden;min-height:0}
 .days-more .day{margin-top:58px}
 .prog-cta{display:flex;justify-content:center;margin-top:48px}
 .prog-cta .btn-line{background:none;font-family:inherit;cursor:pointer}
@@ -213,4 +216,18 @@ ul{list-style:none}
   .foot-contacts{grid-template-columns:1fr 1fr;gap:26px 20px;width:100%}
   .foot-bot{margin-top:34px}
 }
-@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+/* Плавное появление */
+.js .rv{opacity:0;transform:translateY(22px);transition:opacity .8s ease,transform .8s cubic-bezier(.2,.7,.2,1)}
+.js .rv.in{opacity:1;transform:none}
+.js .cards .rv:nth-child(2),.js .stages .rv:nth-child(2){transition-delay:.1s}
+.js .cards .rv:nth-child(3),.js .stages .rv:nth-child(3){transition-delay:.2s}
+.js .cards .rv:nth-child(4),.js .stages .rv:nth-child(4){transition-delay:.3s}
+.hero-kicker,.hero h1,.hero-lead,.hero-links{animation:heroIn 1s cubic-bezier(.2,.7,.2,1) both}
+.hero h1{animation-delay:.12s}
+.hero-lead{animation-delay:.26s}
+.hero-links{animation-delay:.42s}
+@keyframes heroIn{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
+.price-cols details[open] ul{animation:listIn .45s ease both}
+@keyframes listIn{from{opacity:0;transform:translateY(-8px)}to{opacity:1;transform:none}}
+.form-ok{animation:listIn .5s ease both}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.js .rv{opacity:1;transform:none;transition:none}.hero-kicker,.hero h1,.hero-lead,.hero-links,.price-cols details[open] ul,.form-ok{animation:none}.days-more{transition:none}}
