@@ -29,6 +29,7 @@ ul{list-style:none}
 .hero-bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center}
 .hero::after{content:"";position:absolute;inset:auto 0 0 0;height:167px;background:linear-gradient(180deg,rgba(255,255,255,0) 0,rgba(255,255,255,.76) 62%,#fff 100%)}
 .hero-in{position:relative;z-index:2;height:100%;display:flex;flex-direction:column;align-items:center;padding-top:188px}
+.hero-in::before{content:"";position:absolute;z-index:-1;left:50%;top:132px;width:980px;height:400px;transform:translateX(-50%);background:radial-gradient(closest-side,rgba(19,19,19,.3),rgba(19,19,19,.16) 55%,rgba(19,19,19,0));pointer-events:none}
 .hero-kicker{font-size:34px;line-height:40px;text-transform:uppercase}
 .hero h1{margin-top:10px;font-size:68px;line-height:68px;font-weight:700;text-transform:uppercase;text-shadow:0 2px 24px rgba(19,19,19,.18)}
 .hero-lead{margin-top:22px;width:500px;max-width:100%;font-size:20px;line-height:24px;text-shadow:0 1px 14px rgba(19,19,19,.25)}
@@ -161,6 +162,7 @@ ul{list-style:none}
   .pill{min-width:0;height:38px;padding:0 18px;font-size:13px}
   .hero{height:auto;min-height:640px;padding-bottom:150px}
   .hero-in{padding-top:128px;padding-inline:16px}
+  .hero-in::before{top:96px;width:130%;height:330px}
   .hero-kicker{font-size:22px;line-height:28px}
   .hero h1{margin-top:8px;font-size:34px;line-height:38px}
   .hero-lead{margin-top:16px;font-size:17px;line-height:22px}
