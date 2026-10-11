@@ -135,7 +135,7 @@ ul{list-style:none}
 /* Заявка */
 .apply{position:relative;min-height:506px;padding:190px 0 190px;color:var(--white);text-align:center;background:#3d4a5c url("../img/ski2-mount.webp") center 58%/cover no-repeat}
 .apply::before{content:"";position:absolute;inset:0;background:rgba(19,19,19,.39)}
-.apply::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,#fff 0,rgba(255,255,255,.7) 46px,rgba(255,255,255,0) 170px),linear-gradient(0deg,#0039A2 0,rgba(0,57,162,.72) 50px,rgba(0,57,162,0) 180px);pointer-events:none}
+.apply::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,#fff 0,rgba(255,255,255,.7) 46px,rgba(255,255,255,0) 170px),linear-gradient(0deg,#002F86 0,rgba(0,47,134,.72) 50px,rgba(0,47,134,0) 180px);pointer-events:none}
 .apply .wrap{position:relative;z-index:1}
 .apply h2{font-size:61px;line-height:60px;font-weight:700}
 .apply-lead{margin:18px auto 0;max-width:700px;font-size:17px;line-height:27px}
@@ -152,7 +152,7 @@ ul{list-style:none}
 .form-err{margin-top:14px;font-size:14px;min-height:20px}
 
 /* Подвал */
-.foot{background:var(--blue);color:var(--white);padding:26px 0 34px}
+.foot{background:#002F86;color:var(--white);padding:26px 0 34px}
 .foot-top{display:flex;justify-content:space-between;gap:40px;flex-wrap:wrap}
 .foot .logo img{width:160px;height:auto}
 .foot nav{margin-top:22px;display:flex;gap:32px;font-size:14px;flex-wrap:wrap}
@@ -259,7 +259,7 @@ ul{list-style:none}
   .price-cols details+details{border-top:0}
   .price-cols summary{font-size:19px}
   .apply{padding:130px 0 130px}
-  .apply::after{background:linear-gradient(180deg,#fff 0,rgba(255,255,255,.7) 30px,rgba(255,255,255,0) 110px),linear-gradient(0deg,#0039A2 0,rgba(0,57,162,.72) 34px,rgba(0,57,162,0) 120px)}
+  .apply::after{background:linear-gradient(180deg,#fff 0,rgba(255,255,255,.7) 30px,rgba(255,255,255,0) 110px),linear-gradient(0deg,#002F86 0,rgba(0,47,134,.72) 34px,rgba(0,47,134,0) 120px)}
   .apply h2{font-size:36px;line-height:40px}
   .form{margin-top:32px}
   .form-row{grid-template-columns:1fr;gap:18px}
