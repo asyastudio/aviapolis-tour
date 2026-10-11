@@ -1,0 +1,205 @@
+/* Полёт на лыжах. Урал: простой лендинг по макету Figma от 11.10.2026 */
+@font-face{font-family:"Aviapolis";src:url("../fonts/aviapolis-bold.woff2") format("woff2");font-weight:700;font-display:swap}
+@font-face{font-family:"Aviapolis";src:url("../fonts/aviapolis-regular.woff2") format("woff2");font-weight:400;font-display:swap}
+
+:root{--blue:#0039A2;--acc:#0043BF;--sky:#00A6FF;--ink:#131313;--grey:#7A7A7A;--white:#fff;--wrap:1308px;--pad:66px}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;font-family:"Aviapolis",Arial,sans-serif;font-weight:400;color:var(--blue);background:var(--white);-webkit-font-smoothing:antialiased}
+img,svg,video{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+h1,h2,h3,p,ul{margin:0;padding:0}
+ul{list-style:none}
+.wrap{width:100%;max-width:calc(var(--wrap) + var(--pad)*2);margin:0 auto;padding-inline:var(--pad)}
+.h2{font-size:38px;line-height:60px;font-weight:700;text-transform:uppercase;text-align:center;color:var(--blue)}
+
+/* Шапка */
+.top{position:absolute;inset:0 0 auto 0;z-index:5;height:80px;padding-top:env(safe-area-inset-top)}
+.top-in{position:relative;height:80px;display:flex;align-items:center;justify-content:space-between;padding-inline:28px 66px}
+.top .logo img{width:172px;height:auto}
+.top nav{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);display:flex;gap:46px;font-size:15px;color:var(--white)}
+.top nav a:hover{text-decoration:underline;text-underline-offset:4px}
+.pill{display:inline-flex;align-items:center;justify-content:center;height:40px;min-width:160px;padding:0 22px;border-radius:999px;background:var(--white);color:var(--blue);font-weight:700;font-size:14px;text-transform:uppercase;border:0;cursor:pointer;font-family:inherit;transition:background .2s,color .2s}
+.pill:hover{background:var(--blue);color:var(--white)}
+
+/* Первый экран */
+.hero{position:relative;height:860px;max-height:none;color:var(--white);text-align:center;overflow:hidden;background:#9db7d6}
+.hero-bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center}
+.hero::after{content:"";position:absolute;inset:auto 0 0 0;height:167px;background:linear-gradient(180deg,rgba(255,255,255,0) 0,rgba(255,255,255,.76) 62%,#fff 100%)}
+.hero-in{position:relative;z-index:2;height:100%;display:flex;flex-direction:column;align-items:center;padding-top:188px}
+.hero-kicker{font-size:55px;line-height:64px}
+.hero h1{margin-top:16px;font-size:78px;line-height:91px;font-weight:700;text-transform:uppercase;text-shadow:0 2px 24px rgba(19,19,19,.18)}
+.hero-lead{margin-top:132px;width:624px;max-width:100%;font-size:26px;line-height:28px;text-shadow:0 1px 14px rgba(19,19,19,.25)}
+.hero-links{position:absolute;left:0;right:0;top:726px;display:flex;justify-content:center;gap:54px;font-size:19px;font-weight:700;color:var(--blue)}
+.hero-links a{text-decoration:underline;text-underline-offset:3px}
+.hero-links a:hover{color:var(--acc)}
+
+/* Что вас ждёт */
+.await{padding:32px 0 21px}
+.await-lead{margin:-2px auto 0;max-width:688px;font-size:24px;line-height:31px;text-transform:uppercase;text-align:center}
+.cards{margin-top:31px;display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.card{position:relative;aspect-ratio:312/481;border-radius:20px;overflow:hidden;background:var(--acc);color:var(--white)}
+.card img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.card::after{content:"";position:absolute;inset:auto 0 0 0;height:46.2%;background:linear-gradient(180deg,rgba(12,28,66,0) 10%,rgba(12,28,66,.9) 90%);mix-blend-mode:multiply}
+.card-t{position:absolute;z-index:1;left:15px;right:6px;bottom:22px}
+.card h3{font-size:23px;line-height:24px;font-weight:700;text-transform:uppercase}
+.card p{margin-top:8px;padding-right:12px;font-size:15px;line-height:19px;min-height:57px}
+.await-cta{display:flex;justify-content:center;margin-top:42px}
+.btn-line{display:inline-flex;align-items:center;gap:10px;height:51px;padding:0 22px;border:1px solid var(--acc);border-radius:48px;color:var(--blue);font-weight:700;font-size:14px;text-transform:uppercase;transition:background .2s,color .2s}
+.btn-line svg{width:16px;height:10px}
+.btn-line:hover{background:var(--acc);color:var(--white)}
+
+/* Маршрут */
+.route{position:relative;padding:77px 0 107px;background:#d6efff url("../img/ski-resort-hd.webp") center 62%/cover no-repeat;color:var(--ink)}
+.route::before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,#fff 0,rgba(242,248,255,.96) 12%,rgba(214,239,255,.9) 24%,rgba(214,239,255,.35) 46%,rgba(214,239,255,0) 66%)}
+.route .wrap{position:relative}
+.route .h2{color:var(--ink)}
+.route-start{margin-top:2px;font-size:24px;line-height:22px;text-transform:uppercase;text-align:center}
+.route-panel{margin:34px -2px 0;padding:28px 33px 35px 29px;border-radius:20px;background:rgba(0,0,0,.21);display:grid;grid-template-columns:685fr 521fr;gap:24px;align-items:start}
+.map{border-radius:12px;overflow:hidden;background:#f2f2f2}
+.map svg{width:100%;height:auto}
+.map text{font-family:"Aviapolis",Arial,sans-serif;fill:var(--ink);paint-order:stroke;stroke:#fff;stroke-width:4px;stroke-linejoin:round}
+.stages{display:grid;gap:16px}
+.stage{position:relative;min-height:116px;display:grid;grid-template-columns:52px 1fr;column-gap:44px;align-items:center;padding:20px 24px 20px 19px;border-radius:19px;background:var(--white)}
+.stage svg{width:46px;height:46px;justify-self:center;fill:var(--ink)}
+.stage h3{font-size:21px;line-height:26px;font-weight:700;color:var(--ink)}
+.stage p{margin-top:10px;font-size:21px;line-height:22px;color:var(--grey)}
+.stage span{position:absolute;right:24px;top:28px;font-size:13px;color:var(--grey);white-space:nowrap}
+
+/* Программа */
+.prog{position:relative;padding:66px 0 96px;overflow:hidden}
+.prog-path{position:absolute;top:87px;left:50%;margin-left:-860px;width:1219px;height:1656px;pointer-events:none}
+.prog-plane{position:absolute;top:1629px;left:50%;margin-left:376px;width:26px;height:26px;transform:rotate(23deg);opacity:.25;fill:var(--grey);pointer-events:none}
+.prog .wrap{position:relative}
+.day{display:grid;grid-template-columns:636px 1fr;gap:44px;align-items:start;margin-top:37px}
+.day+.day{margin-top:58px}
+.day:nth-of-type(2){grid-template-columns:1fr 636px;gap:36px;padding-left:8px;align-items:center}
+.day:nth-of-type(2) .day-ph{order:2}
+.day:nth-of-type(3){margin-top:46px;align-items:center}
+.day-ph{aspect-ratio:636/494;border-radius:21px;overflow:hidden;background:#dfe7f0}
+.day-ph img{width:100%;height:100%;object-fit:cover}
+.day-tx{padding-top:12px;max-width:628px}
+.day h3{font-size:28px;line-height:36px;font-weight:700;text-transform:uppercase}
+.day-tx p{margin-top:16px;font-size:21px;line-height:26px;max-width:594px}
+.day-tx p+p{margin-top:10px}
+.day-tx .stay{margin-top:40px}
+.day-tx .stay b{display:block;font-weight:700;margin-bottom:8px}
+
+/* Стоимость */
+.price{padding:20px 0 96px;text-align:center}
+.price-sum{font-size:64px;line-height:72px;font-weight:700}
+.price-sub{margin-top:8px;font-size:24px;line-height:31px;text-transform:uppercase}
+.price-note{margin:14px auto 0;max-width:700px;font-size:17px;line-height:25px}
+.price-cols{margin:40px auto 0;max-width:880px;display:grid;grid-template-columns:1fr 1fr;gap:40px;text-align:left}
+.price-cols details{border-top:1px solid #D9D9D9;border-bottom:1px solid #D9D9D9}
+.price-cols summary{display:flex;justify-content:space-between;align-items:center;padding:16px 0;font-size:21px;font-weight:700;cursor:pointer;list-style:none}
+.price-cols summary::-webkit-details-marker{display:none}
+.price-cols summary::after{content:"+";font-weight:400;font-size:24px;line-height:1}
+.price-cols details[open] summary::after{content:"–"}
+.price-cols li{position:relative;padding-left:20px;margin-bottom:10px;font-size:17px;line-height:24px}
+.price-cols li::before{content:"";position:absolute;left:0;top:9px;width:6px;height:6px;border-radius:50%;background:var(--sky)}
+.price-cols ul{padding-bottom:12px}
+
+/* Заявка */
+.apply{position:relative;min-height:506px;padding:76px 0 70px;color:var(--white);text-align:center;background:#3d4a5c url("../img/ski2-mount.webp") center 58%/cover no-repeat}
+.apply::before{content:"";position:absolute;inset:0;background:rgba(19,19,19,.39)}
+.apply .wrap{position:relative}
+.apply h2{font-size:61px;line-height:60px;font-weight:700}
+.apply-lead{margin:18px auto 0;max-width:700px;font-size:17px;line-height:27px}
+.form{margin:48px auto 0;max-width:940px;text-align:left}
+.form-row{display:grid;grid-template-columns:300px 300px 1fr;gap:30px;align-items:end}
+.form input[type=text],.form input[type=tel]{width:100%;height:45px;padding:0;border:0;border-bottom:1px solid var(--white);background:none;color:var(--white);font:400 16px/22px "Aviapolis",Arial,sans-serif;outline:none;border-radius:0}
+.form input::placeholder{color:var(--white);opacity:1}
+.form input:focus{border-bottom-width:2px}
+.form .pill{height:48px;width:100%;font-size:16px;text-transform:none}
+.agree{display:flex;align-items:center;gap:12px;margin-top:36px;font-size:13px;line-height:20px;cursor:pointer}
+.agree input{appearance:none;-webkit-appearance:none;flex:none;width:16px;height:16px;margin:0;border:1px solid var(--white);border-radius:3px;background:none;cursor:pointer}
+.agree input:checked{background:var(--white) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath d='M3.500 8.300l3 2.900 6-6.400' fill='none' stroke='%230039A2' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center/14px no-repeat}
+.form-ok{margin-top:48px;font-size:24px;line-height:32px;text-align:center}
+.form-err{margin-top:14px;font-size:14px;min-height:20px}
+
+/* Подвал */
+.foot{background:var(--acc);color:var(--white);padding:50px 0 34px}
+.foot-top{display:flex;justify-content:space-between;gap:40px;flex-wrap:wrap}
+.foot .logo img{width:172px;margin-left:-38px}
+.foot nav{margin-top:22px;display:flex;gap:32px;font-size:14px;flex-wrap:wrap}
+.foot nav a:hover{text-decoration:underline;text-underline-offset:4px}
+.foot-contacts{display:grid;grid-template-columns:repeat(4,auto);gap:50px;font-size:13px;align-content:start;padding-top:6px}
+.foot-contacts div{min-width:110px;padding-bottom:13px;border-bottom:1px solid var(--white)}
+.foot-bot{margin-top:48px;padding-top:24px;border-top:1px solid var(--white);display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;font-size:12px}
+
+/* Планшет */
+@media (max-width:1240px){
+  :root{--pad:32px}
+  .top-in{padding-inline:12px 32px}
+  .top nav{gap:28px}
+  .cards{grid-template-columns:repeat(2,1fr)}
+  .card{aspect-ratio:1/1}
+  .route-panel{grid-template-columns:1fr;padding:24px}
+  .stage p{font-size:19px}
+  .prog-path,.prog-plane{display:none}
+  .day,.day:nth-of-type(2){grid-template-columns:1fr 1fr;gap:32px;padding-left:0;align-items:start}
+  .day h3{font-size:24px;line-height:30px}
+  .day-tx p{font-size:18px;line-height:24px}
+  .day-tx{padding-top:0}
+  .foot-contacts{grid-template-columns:repeat(2,auto)}
+}
+
+/* Телефон */
+@media (max-width:760px){
+  :root{--pad:16px}
+  .h2{font-size:28px;line-height:36px}
+  .top-in{padding-inline:4px 16px}
+  .top .logo img{width:140px}
+  .top nav{display:none}
+  .pill{min-width:0;height:38px;padding:0 18px;font-size:13px}
+  .hero{height:auto;min-height:640px;padding-bottom:150px}
+  .hero-in{padding-top:128px;padding-inline:16px}
+  .hero-kicker{font-size:30px;line-height:36px}
+  .hero h1{margin-top:10px;font-size:38px;line-height:44px}
+  .hero-lead{margin-top:40px;font-size:19px;line-height:24px}
+  .hero-links{position:absolute;top:auto;bottom:34px;flex-direction:column;align-items:center;gap:14px;font-size:17px}
+  .await{padding-top:20px}
+  .await-lead{font-size:17px;line-height:23px;margin-top:8px}
+  .cards{grid-template-columns:1fr;gap:14px;margin-top:24px}
+  .card{aspect-ratio:4/3.6}
+  .card p{min-height:0}
+  .await-cta{margin-top:28px}
+  .route{padding:48px 0 60px}
+  .route-start{font-size:16px;line-height:22px;margin-top:6px}
+  .route-panel{margin:22px 0 0;padding:12px;border-radius:16px;gap:12px}
+  .map{overflow-x:auto;-webkit-overflow-scrolling:touch}
+  .map svg{width:560px;max-width:none}
+  .stages{gap:10px}
+  .stage{min-height:0;grid-template-columns:40px 1fr;column-gap:16px;padding:16px 16px 16px 14px;border-radius:14px}
+  .stage svg{width:34px;height:34px}
+  .stage h3{font-size:18px;line-height:22px;padding-right:56px}
+  .stage p{font-size:16px;line-height:20px;margin-top:6px}
+  .stage span{right:16px;top:18px;font-size:12px}
+  .prog{padding:44px 0 56px}
+  .day,.day:nth-of-type(2){grid-template-columns:1fr;gap:18px;margin-top:28px}
+  .day+.day{margin-top:44px}
+  .day:nth-of-type(2) .day-ph{order:0}
+  .day-ph{border-radius:16px}
+  .day h3{font-size:21px;line-height:26px}
+  .day-tx p{font-size:17px;line-height:23px}
+  .day-tx .stay{margin-top:22px}
+  .price{padding:0 0 56px}
+  .price-sum{font-size:44px;line-height:50px}
+  .price-sub{font-size:17px;line-height:23px}
+  .price-note{font-size:16px;line-height:23px}
+  .price-cols{grid-template-columns:1fr;gap:0;margin-top:28px}
+  .price-cols details+details{border-top:0}
+  .price-cols summary{font-size:19px}
+  .apply{padding:56px 0 56px}
+  .apply h2{font-size:36px;line-height:40px}
+  .form{margin-top:32px}
+  .form-row{grid-template-columns:1fr;gap:18px}
+  .form .pill{margin-top:8px}
+  .agree{margin-top:22px;align-items:flex-start}
+  .agree input{margin-top:2px}
+  .foot{padding:40px 0 calc(28px + env(safe-area-inset-bottom))}
+  .foot-contacts{grid-template-columns:1fr 1fr;gap:26px 20px;width:100%}
+  .foot-bot{margin-top:34px}
+}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
