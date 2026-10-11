@@ -40,10 +40,10 @@ ul{list-style:none}
 .cards{margin-top:31px;display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
 .card{position:relative;aspect-ratio:312/481;border-radius:20px;overflow:hidden;background:var(--acc);color:var(--white)}
 .card img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
-.card::after{content:"";position:absolute;inset:auto 0 0 0;height:46.2%;background:linear-gradient(180deg,rgba(19,19,19,0) 10%,rgba(19,19,19,.81) 90%);mix-blend-mode:multiply}
-.card-t{position:absolute;z-index:1;left:15px;right:6px;bottom:22px}
-.card h3{font-size:23px;line-height:24px;font-weight:700;text-transform:uppercase}
-.card p{margin-top:8px;padding-right:12px;font-size:15px;line-height:19px;min-height:57px}
+.card::after{content:"";position:absolute;inset:auto 0 0 0;height:58%;background:linear-gradient(180deg,rgba(0,0,0,0) 0,rgba(0,0,0,.42) 38%,rgba(0,0,0,.82) 100%)}
+.card-t{position:absolute;z-index:1;left:20px;right:14px;bottom:20px}
+.card h3{font-size:21px;line-height:24px;font-weight:700;text-transform:uppercase;white-space:nowrap}
+.card p{margin-top:8px;font-size:15px;line-height:19px;height:76px}
 .await-cta{display:flex;justify-content:center;margin-top:42px}
 .btn-line{display:inline-flex;align-items:center;gap:10px;height:51px;padding:0 22px;border:1px solid var(--acc);border-radius:48px;color:var(--blue);font-weight:700;font-size:14px;text-transform:uppercase;transition:background .2s,color .2s}
 .btn-line svg{width:16px;height:10px}
@@ -60,7 +60,7 @@ ul{list-style:none}
 .map svg{width:100%;height:auto}
 .map text{font-family:"Aviapolis",Arial,sans-serif;fill:var(--ink);paint-order:stroke;stroke:#fff;stroke-width:4px;stroke-linejoin:round}
 .stages{display:grid;gap:16px}
-.stage{position:relative;min-height:116px;display:grid;grid-template-columns:52px 1fr;column-gap:44px;align-items:center;padding:20px 24px 20px 19px;border-radius:19px;background:var(--white)}
+.stage{position:relative;min-height:116px;display:grid;grid-template-columns:52px 1fr;column-gap:22px;align-items:center;padding:20px 24px 20px 19px;border-radius:19px;background:var(--white)}
 .stage svg{width:46px;height:46px;justify-self:center;fill:var(--ink)}
 .stage h3{font-size:21px;line-height:26px;font-weight:700;color:var(--ink)}
 .stage p{margin-top:10px;font-size:21px;line-height:22px;color:var(--grey)}
@@ -84,6 +84,7 @@ ul{list-style:none}
 .day-tx p+p{margin-top:10px}
 .day-tx .stay{margin-top:40px}
 .day-tx .stay b{display:block;font-weight:700;margin-bottom:8px}
+.day-tx .stay span{text-decoration:underline;text-underline-offset:4px;text-decoration-thickness:1px}
 
 /* Стоимость */
 .price{padding:20px 0 96px;text-align:center}
@@ -135,6 +136,7 @@ ul{list-style:none}
   .top nav{gap:28px}
   .cards{grid-template-columns:repeat(2,1fr)}
   .card{aspect-ratio:1/1}
+  .card p{height:auto;min-height:38px}
   .route-panel{grid-template-columns:1fr;padding:24px}
   .stage p{font-size:19px}
   .prog-path,.prog-plane{display:none}
@@ -163,7 +165,8 @@ ul{list-style:none}
   .await-lead{font-size:17px;line-height:23px;margin-top:8px}
   .cards{grid-template-columns:1fr;gap:14px;margin-top:24px}
   .card{aspect-ratio:4/3.6}
-  .card p{min-height:0}
+  .card p{height:auto}
+  .card h3{white-space:normal}
   .await-cta{margin-top:28px}
   .route{padding:48px 0 60px}
   .route-start{font-size:16px;line-height:22px;margin-top:6px}
