@@ -30,7 +30,7 @@ ul{list-style:none}
 .hero-kicker{font-size:55px;line-height:64px}
 .hero h1{margin-top:16px;font-size:78px;line-height:91px;font-weight:700;text-transform:uppercase;text-shadow:0 2px 24px rgba(19,19,19,.18)}
 .hero-lead{margin-top:132px;width:624px;max-width:100%;font-size:26px;line-height:28px;text-shadow:0 1px 14px rgba(19,19,19,.25)}
-.hero-links{position:absolute;left:0;right:0;top:726px;display:flex;justify-content:center;gap:54px;font-size:19px;font-weight:700;color:var(--blue)}
+.hero-links{position:absolute;z-index:3;left:0;right:0;top:728px;display:flex;justify-content:center;gap:44px;font-size:16px;font-weight:700;color:var(--blue)}
 .hero-links a{text-decoration:underline;text-underline-offset:3px}
 .hero-links a:hover{color:var(--acc)}
 
@@ -40,7 +40,7 @@ ul{list-style:none}
 .cards{margin-top:31px;display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
 .card{position:relative;aspect-ratio:312/481;border-radius:20px;overflow:hidden;background:var(--acc);color:var(--white)}
 .card img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
-.card::after{content:"";position:absolute;inset:auto 0 0 0;height:46.2%;background:linear-gradient(180deg,rgba(12,28,66,0) 10%,rgba(12,28,66,.9) 90%);mix-blend-mode:multiply}
+.card::after{content:"";position:absolute;inset:auto 0 0 0;height:46.2%;background:linear-gradient(180deg,rgba(19,19,19,0) 10%,rgba(19,19,19,.81) 90%);mix-blend-mode:multiply}
 .card-t{position:absolute;z-index:1;left:15px;right:6px;bottom:22px}
 .card h3{font-size:23px;line-height:24px;font-weight:700;text-transform:uppercase}
 .card p{margin-top:8px;padding-right:12px;font-size:15px;line-height:19px;min-height:57px}
@@ -97,7 +97,7 @@ ul{list-style:none}
 .price-cols summary::after{content:"+";font-weight:400;font-size:24px;line-height:1}
 .price-cols details[open] summary::after{content:"–"}
 .price-cols li{position:relative;padding-left:20px;margin-bottom:10px;font-size:17px;line-height:24px}
-.price-cols li::before{content:"";position:absolute;left:0;top:9px;width:6px;height:6px;border-radius:50%;background:var(--sky)}
+.price-cols li::before{content:"";position:absolute;left:0;top:10px;width:5px;height:5px;border-radius:50%;background:var(--blue)}
 .price-cols ul{padding-bottom:12px}
 
 /* Заявка */
@@ -158,7 +158,7 @@ ul{list-style:none}
   .hero-kicker{font-size:30px;line-height:36px}
   .hero h1{margin-top:10px;font-size:38px;line-height:44px}
   .hero-lead{margin-top:40px;font-size:19px;line-height:24px}
-  .hero-links{position:absolute;top:auto;bottom:34px;flex-direction:column;align-items:center;gap:14px;font-size:17px}
+  .hero-links{position:absolute;top:auto;bottom:34px;flex-direction:column;align-items:center;gap:14px;font-size:15px}
   .await{padding-top:20px}
   .await-lead{font-size:17px;line-height:23px;margin-top:8px}
   .cards{grid-template-columns:1fr;gap:14px;margin-top:24px}
