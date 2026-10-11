@@ -17,8 +17,8 @@ ul{list-style:none}
 
 /* Шапка */
 .top{position:absolute;inset:0 0 auto 0;z-index:5;height:80px;padding-top:env(safe-area-inset-top)}
-.top-in{position:relative;height:80px;display:flex;align-items:center;justify-content:space-between;padding-inline:28px 66px}
-.top .logo img{width:172px;height:auto}
+.top-in{position:relative;height:80px;display:flex;align-items:center;justify-content:space-between;padding-inline:38px 66px}
+.top .logo img{width:160px;height:auto}
 .top nav{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);display:flex;gap:46px;font-size:15px;color:var(--white)}
 .top nav a:hover{text-decoration:underline;text-underline-offset:4px}
 .pill{display:inline-flex;align-items:center;justify-content:center;height:40px;min-width:160px;padding:0 22px;border-radius:999px;background:var(--white);color:var(--blue);font-weight:700;font-size:14px;text-transform:uppercase;border:0;cursor:pointer;font-family:inherit;transition:background .2s,color .2s}
@@ -41,7 +41,7 @@ ul{list-style:none}
 .await-lead{margin:-2px auto 0;max-width:688px;font-size:24px;line-height:31px;text-transform:uppercase;text-align:center}
 .cards{margin-top:31px;display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
 .card{position:relative;aspect-ratio:312/481;border-radius:20px;overflow:hidden;background:var(--acc);color:var(--white)}
-.card img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.card img,.card video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
 .card::after{content:"";position:absolute;inset:auto 0 0 0;height:58%;background:linear-gradient(180deg,rgba(0,0,0,0) 0,rgba(0,0,0,.42) 38%,rgba(0,0,0,.82) 100%)}
 .card-t{position:absolute;z-index:1;left:20px;right:14px;bottom:20px}
 .card h3{font-size:21px;line-height:24px;font-weight:700;text-transform:uppercase;white-space:nowrap}
@@ -124,7 +124,7 @@ ul{list-style:none}
 /* Подвал */
 .foot{background:var(--blue);color:var(--white);padding:50px 0 34px}
 .foot-top{display:flex;justify-content:space-between;gap:40px;flex-wrap:wrap}
-.foot .logo img{width:172px;margin-left:-38px}
+.foot .logo img{width:160px;height:auto}
 .foot nav{margin-top:22px;display:flex;gap:32px;font-size:14px;flex-wrap:wrap}
 .foot nav a:hover{text-decoration:underline;text-underline-offset:4px}
 .foot-contacts{display:grid;grid-template-columns:repeat(4,auto);gap:50px;font-size:13px;align-content:start;padding-top:6px}
@@ -134,7 +134,7 @@ ul{list-style:none}
 /* Планшет */
 @media (max-width:1240px){
   :root{--pad:32px}
-  .top-in{padding-inline:12px 32px}
+  .top-in{padding-inline:32px}
   .top nav{gap:28px}
   .cards{grid-template-columns:repeat(2,1fr)}
   .card{aspect-ratio:1/1}
@@ -153,8 +153,8 @@ ul{list-style:none}
 @media (max-width:760px){
   :root{--pad:16px}
   .h2{font-size:28px;line-height:36px}
-  .top-in{padding-inline:4px 16px}
-  .top .logo img{width:140px}
+  .top-in{padding-inline:16px}
+  .top .logo img{width:128px}
   .top nav{display:none}
   .pill{min-width:0;height:38px;padding:0 18px;font-size:13px}
   .hero{height:auto;min-height:640px;padding-bottom:150px}
