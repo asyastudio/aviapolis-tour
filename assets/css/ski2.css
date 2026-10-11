@@ -71,7 +71,7 @@ ul{list-style:none}
 .prog-path{position:absolute;top:87px;left:50%;margin-left:-860px;width:1219px;height:1656px;pointer-events:none}
 .prog-plane{position:absolute;top:1629px;left:50%;margin-left:376px;width:26px;height:26px;transform:rotate(23deg);opacity:.25;fill:var(--grey);pointer-events:none}
 .prog .wrap{position:relative}
-.day{display:grid;grid-template-columns:636px 1fr;gap:44px;align-items:start;margin-top:37px}
+.day{display:grid;grid-template-columns:636px 1fr;gap:44px;align-items:start;margin-top:68px}
 .day+.day{margin-top:58px}
 .day:nth-of-type(2){grid-template-columns:1fr 636px;gap:36px;padding-left:8px;align-items:center}
 .day:nth-of-type(2) .day-ph{order:2}
@@ -177,7 +177,7 @@ ul{list-style:none}
   .stage p{font-size:16px;line-height:20px;margin-top:6px}
   .stage span{right:16px;top:18px;font-size:12px}
   .prog{padding:44px 0 56px}
-  .day,.day:nth-of-type(2){grid-template-columns:1fr;gap:18px;margin-top:28px}
+  .day,.day:nth-of-type(2){grid-template-columns:1fr;gap:18px;margin-top:36px}
   .day+.day{margin-top:44px}
   .day:nth-of-type(2) .day-ph{order:0}
   .day-ph{border-radius:16px}
