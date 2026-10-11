@@ -76,20 +76,20 @@ ul{list-style:none}
 .prog .wrap{position:relative}
 .day{display:grid;grid-template-columns:636px 1fr;gap:44px;align-items:start;margin-top:68px}
 .day+.day{margin-top:58px}
-.day:nth-of-type(2){grid-template-columns:1fr 636px;gap:36px;padding-left:8px}
-.day:nth-of-type(2) .day-ph{order:2}
-.day:nth-of-type(3){margin-top:46px}
+.day.flip{grid-template-columns:1fr 636px;gap:36px;padding-left:8px}
+.day.flip .day-ph{order:2}
+.days-more .day{margin-top:58px}
+.prog-cta{display:flex;justify-content:center;margin-top:48px}
+.prog-cta .btn-line{background:none;font-family:inherit;cursor:pointer}
 .day-ph{aspect-ratio:636/494;border-radius:21px;overflow:hidden;background:#dfe7f0}
 .day-ph img,.day-ph video{width:100%;height:100%;object-fit:cover}
 .day-tx{padding-top:12px;max-width:628px}
 .day h3{font-size:28px;line-height:36px;font-weight:700;text-transform:uppercase}
 .day-tx p{margin-top:16px;font-size:21px;line-height:26px;max-width:594px}
-.day-tx .more p:first-child{margin-top:10px}
+.day-tx p+p{margin-top:10px}
 .day-tx .stay{margin-top:28px}
 .day-tx .stay b{display:block;font-weight:700;margin-bottom:8px}
 .day-tx .stay span{text-decoration:underline;text-underline-offset:4px;text-decoration-thickness:1px}
-.more-btn{display:inline-flex;align-items:center;margin-top:22px;height:44px;padding:0 20px;border:1px solid var(--acc);border-radius:48px;background:none;color:var(--blue);font:700 14px/1 "Aviapolis",Arial,sans-serif;text-transform:uppercase;cursor:pointer;transition:background .2s,color .2s}
-.more-btn:hover{background:var(--acc);color:var(--white)}
 
 /* Стоимость */
 .price{padding:20px 0 96px;text-align:center}
@@ -112,12 +112,12 @@ ul{list-style:none}
 .apply .wrap{position:relative}
 .apply h2{font-size:61px;line-height:60px;font-weight:700}
 .apply-lead{margin:18px auto 0;max-width:700px;font-size:17px;line-height:27px}
-.form{margin:48px auto 0;max-width:940px;text-align:left}
-.form-row{display:grid;grid-template-columns:300px 300px 1fr;gap:30px;align-items:end}
+.form{margin:48px auto 0;max-width:820px;text-align:left}
+.form-row{display:grid;grid-template-columns:300px 300px auto;gap:30px;align-items:end;justify-content:center}
 .form input[type=text],.form input[type=tel]{width:100%;height:45px;padding:0;border:0;border-bottom:1px solid var(--white);background:none;color:var(--white);font:400 16px/22px "Aviapolis",Arial,sans-serif;outline:none;border-radius:0}
 .form input::placeholder{color:var(--white);opacity:1}
 .form input:focus{border-bottom-width:2px}
-.form .pill{height:48px;width:100%;font-size:16px;text-transform:none}
+.form .pill{height:51px;min-width:0;padding:0 38px;font-size:14px;text-transform:uppercase}
 .agree{display:flex;align-items:center;gap:12px;margin-top:36px;font-size:13px;line-height:20px;cursor:pointer}
 .agree input{appearance:none;-webkit-appearance:none;flex:none;width:16px;height:16px;margin:0;border:1px solid var(--white);border-radius:3px;background:none;cursor:pointer}
 .agree input:checked{background:var(--white) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath d='M3.500 8.300l3 2.900 6-6.400' fill='none' stroke='%230039A2' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center/14px no-repeat}
@@ -145,7 +145,7 @@ ul{list-style:none}
   .route-panel{grid-template-columns:1fr;padding:24px}
   .stage p{font-size:19px}
   .prog-path,.prog-plane{display:none}
-  .day,.day:nth-of-type(2){grid-template-columns:1fr 1fr;gap:32px;padding-left:0}
+  .day,.day.flip{grid-template-columns:1fr 1fr;gap:32px;padding-left:0}
   .day-tx{padding-top:0}
   .day h3{font-size:24px;line-height:30px}
   .day-tx p{font-size:18px;line-height:24px}
@@ -186,9 +186,11 @@ ul{list-style:none}
   .stage p{font-size:16px;line-height:20px;margin-top:6px}
   .stage span{right:16px;top:18px;font-size:12px}
   .prog{padding:44px 0 56px}
-  .day,.day:nth-of-type(2){grid-template-columns:1fr;gap:18px;margin-top:36px}
+  .day,.day.flip{grid-template-columns:1fr;gap:18px;margin-top:36px}
+  .days-more .day{margin-top:44px}
+  .prog-cta{margin-top:30px}
   .day+.day{margin-top:44px}
-  .day:nth-of-type(2) .day-ph{order:0}
+  .day.flip .day-ph{order:0}
   .day-ph{border-radius:16px}
   .day h3{font-size:21px;line-height:26px}
   .day-tx p{font-size:17px;line-height:23px}
@@ -204,7 +206,7 @@ ul{list-style:none}
   .apply h2{font-size:36px;line-height:40px}
   .form{margin-top:32px}
   .form-row{grid-template-columns:1fr;gap:18px}
-  .form .pill{margin-top:8px}
+  .form .pill{margin-top:8px;width:100%}
   .agree{margin-top:22px;align-items:flex-start}
   .agree input{margin-top:2px}
   .foot{padding:40px 0 calc(28px + env(safe-area-inset-bottom))}
