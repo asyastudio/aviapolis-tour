@@ -86,6 +86,19 @@ ul{list-style:none}
 .prog-cta .btn-line{background:none;font-family:inherit;cursor:pointer}
 .day-ph{aspect-ratio:636/494;border-radius:21px;overflow:hidden;background:#dfe7f0}
 .day-ph img,.day-ph video{width:100%;height:100%;object-fit:cover}
+.sl{position:relative}
+.sl-track{display:flex;height:100%;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;-ms-overflow-style:none}
+.sl-track::-webkit-scrollbar{display:none}
+.sl-item{flex:0 0 100%;height:100%;scroll-snap-align:start}
+.sl-btn{position:absolute;top:50%;width:44px;height:44px;margin-top:-22px;border:0;border-radius:50%;background:var(--white);color:var(--blue);display:flex;align-items:center;justify-content:center;cursor:pointer;opacity:.92;transition:opacity .2s,transform .2s}
+.sl-btn svg{width:16px;height:10px}
+.sl-btn:hover{opacity:1;transform:scale(1.06)}
+.sl-prev{left:16px}
+.sl-prev svg{transform:rotate(180deg)}
+.sl-next{right:16px}
+.sl-dots{position:absolute;left:0;right:0;bottom:16px;display:flex;justify-content:center;gap:8px;pointer-events:none}
+.sl-dots i{width:8px;height:8px;border-radius:50%;background:var(--white);opacity:.5;transition:opacity .3s,transform .3s}
+.sl-dots i.on{opacity:1;transform:scale(1.25)}
 .day-tx{padding-top:12px;max-width:628px}
 .day h3{font-size:28px;line-height:36px;font-weight:700;text-transform:uppercase}
 .day-tx p{margin-top:16px;font-size:21px;line-height:26px;max-width:594px}
@@ -133,7 +146,7 @@ ul{list-style:none}
 .foot .logo img{width:160px;height:auto}
 .foot nav{margin-top:22px;display:flex;gap:32px;font-size:14px;flex-wrap:wrap}
 .foot nav a:hover{text-decoration:underline;text-underline-offset:4px}
-.foot-contacts{display:grid;grid-template-columns:repeat(4,auto);gap:50px;font-size:13px;align-content:start;padding-top:6px}
+.foot-contacts{display:grid;grid-template-columns:repeat(3,auto);gap:50px;font-size:13px;align-content:start;padding-top:6px}
 .foot-contacts div{min-width:110px;padding-bottom:13px;border-bottom:1px solid var(--white)}
 .foot-bot{margin-top:48px;padding-top:24px;border-top:1px solid var(--white);display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;font-size:12px}
 
@@ -195,6 +208,9 @@ ul{list-style:none}
   .day+.day{margin-top:44px}
   .day.flip .day-ph{order:0}
   .day-ph{border-radius:16px}
+  .sl-btn{width:38px;height:38px;margin-top:-19px}
+  .sl-prev{left:10px}
+  .sl-next{right:10px}
   .day h3{font-size:21px;line-height:26px}
   .day-tx p{font-size:17px;line-height:23px}
   .day-tx .stay{margin-top:22px}
