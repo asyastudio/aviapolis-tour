@@ -5,7 +5,7 @@
 :root{--blue:#0039A2;--acc:#0043BF;--sky:#00A6FF;--ink:#131313;--grey:#7A7A7A;--white:#fff;--wrap:1308px;--pad:66px}
 *,*::before,*::after{box-sizing:border-box}
 html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
-body{margin:0;font-family:"Aviapolis",Arial,sans-serif;font-weight:400;color:var(--blue);background:var(--white);-webkit-font-smoothing:antialiased}
+body{zoom:var(--k,1);margin:0;font-family:"Aviapolis",Arial,sans-serif;font-weight:400;color:var(--blue);background:var(--white);-webkit-font-smoothing:antialiased}
 img,svg,video{display:block;max-width:100%}
 a{color:inherit;text-decoration:none}
 h1,h2,h3,p,ul{margin:0;padding:0}
