@@ -118,7 +118,7 @@ ul{list-style:none}
 .day-tx a:hover{color:var(--acc)}
 
 /* Стоимость */
-.price{padding:20px 0 70px;text-align:center}
+.price{padding:104px 0 70px;text-align:center}
 .price-sum{font-size:64px;line-height:72px;font-weight:700}
 .price-sub{margin-top:8px;font-size:24px;line-height:31px;text-transform:uppercase}
 .price-note{margin:14px auto 0;max-width:700px;font-size:17px;line-height:25px}
@@ -253,7 +253,7 @@ ul{list-style:none}
   .day h3{font-size:21px;line-height:26px}
   .day-tx p{font-size:16px;line-height:22px}
   .day-tx .stay{margin-top:22px}
-  .price{padding:0 0 56px}
+  .price{padding:48px 0 56px}
   .price-sum{font-size:44px;line-height:50px}
   .price-sub{font-size:17px;line-height:23px}
   .price-note{font-size:16px;line-height:23px}
