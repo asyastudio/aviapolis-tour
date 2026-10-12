@@ -194,9 +194,11 @@ ul{list-style:none}
   .top-tg{width:40px;height:44px}
   .top-tg svg{width:23px;height:23px}
   .burger{display:flex;flex-direction:column;justify-content:center;gap:7px;width:44px;height:44px;margin-right:-8px;padding:0 8px;border:0;background:none;cursor:pointer}
-  .burger i{display:block;height:1.5px;background:var(--white);transition:transform .3s}
-  .top.open .burger i:first-child{transform:translateY(4.25px) rotate(45deg)}
-  .top.open .burger i:last-child{transform:translateY(-4.25px) rotate(-45deg)}
+  .burger i{display:block;width:28px;height:2px;border-radius:1px;background:var(--white);box-shadow:0 0 3px rgba(19,19,19,.35);transition:transform .3s}
+  .top::before{content:"";position:absolute;z-index:-1;inset:0 0 auto 0;height:128px;background:linear-gradient(180deg,rgba(19,19,19,.46) 0,rgba(19,19,19,.2) 55%,rgba(19,19,19,0) 100%);pointer-events:none;transition:opacity .3s}
+  .top.stuck::before,.top.open::before{opacity:0}
+  .top.open .burger i:first-child{transform:translateY(4.5px) rotate(45deg)}
+  .top.open .burger i:last-child{transform:translateY(-4.5px) rotate(-45deg)}
   .mnav{display:grid;grid-template-rows:0fr;transition:grid-template-rows .4s cubic-bezier(.4,0,.2,1)}
   .top.open .mnav{grid-template-rows:1fr}
   .mnav-in{overflow:hidden;min-height:0}
