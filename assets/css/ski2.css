@@ -30,7 +30,7 @@ ul{list-style:none}
 .pill{display:inline-flex;align-items:center;justify-content:center;white-space:nowrap;height:40px;min-width:160px;padding:0 22px;border-radius:999px;background:var(--white);color:var(--blue);font-weight:700;font-size:14px;text-transform:uppercase;border:0;cursor:pointer;font-family:inherit;transition:background .2s,color .2s}
 .pill:hover{background:var(--blue);color:var(--white)}
 
-.burger,.mnav{display:none}
+.burger,.mnav,.fab{display:none}
 
 /* Первый экран */
 .hero{position:relative;height:860px;max-height:none;color:var(--white);text-align:center;overflow:hidden;background:#9db7d6}
@@ -209,6 +209,8 @@ ul{list-style:none}
   .top-r{gap:2px}
   .top-tg{width:40px;height:44px}
   .top-tg svg{width:23px;height:23px}
+  .fab{display:flex;position:fixed;z-index:6;left:16px;right:16px;bottom:calc(14px + env(safe-area-inset-bottom));height:50px;align-items:center;justify-content:center;border-radius:999px;background:var(--blue);color:var(--white);font-weight:700;font-size:14px;text-transform:uppercase;box-shadow:0 8px 24px rgba(19,19,19,.24);opacity:0;transform:translateY(18px);pointer-events:none;transition:opacity .35s ease,transform .35s ease}
+  .fab.on{opacity:1;transform:none;pointer-events:auto}
   .burger{display:flex;flex-direction:column;justify-content:center;gap:7px;width:44px;height:44px;margin-right:-8px;padding:0 8px;border:0;background:none;cursor:pointer}
   .burger i{display:block;width:28px;height:2px;border-radius:1px;background:var(--white);box-shadow:0 0 3px rgba(19,19,19,.35);transition:transform .3s}
   .top::before{content:"";position:absolute;z-index:-1;inset:0 0 auto 0;height:128px;background:linear-gradient(180deg,rgba(19,19,19,.46) 0,rgba(19,19,19,.2) 55%,rgba(19,19,19,0) 100%);pointer-events:none;transition:opacity .3s}
