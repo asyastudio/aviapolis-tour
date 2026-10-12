@@ -77,7 +77,7 @@ ul{list-style:none}
 .stage span{position:absolute;right:24px;top:28px;font-size:13px;color:var(--grey);white-space:nowrap}
 
 /* Программа */
-.prog{position:relative;padding:66px 0 96px;overflow:hidden}
+.prog{position:relative;padding:66px 0 48px;overflow:hidden}
 .prog-path{position:absolute;top:87px;left:50%;margin-left:-860px;width:1219px;height:1656px;overflow:visible;pointer-events:none}
 .prog .wrap{position:relative}
 .day{display:grid;grid-template-columns:636px 1fr;gap:44px;align-items:start;margin-top:68px}
@@ -118,8 +118,8 @@ ul{list-style:none}
 .day-tx a:hover{color:var(--acc)}
 
 /* Стоимость */
-.price{position:relative;margin-top:36px;padding:150px 0 150px;text-align:center;background:#f4f6f9 url(../img/ski2-snow2.webp) center/cover no-repeat}
-.price::before,.price::after{content:"";position:absolute;left:0;right:0;height:150px;pointer-events:none}
+.price{position:relative;margin-top:0;padding:84px 0 88px;text-align:center;background:#f4f6f9 url(../img/ski2-snow2.webp) center/cover no-repeat}
+.price::before,.price::after{content:"";position:absolute;left:0;right:0;height:84px;pointer-events:none}
 .price::before{top:0;background:linear-gradient(180deg,#fff 0,rgba(255,255,255,.75) 40%,rgba(255,255,255,0) 100%)}
 .price::after{bottom:0;background:linear-gradient(0deg,#fff 0,rgba(255,255,255,.75) 40%,rgba(255,255,255,0) 100%)}
 .price .wrap{position:relative;z-index:1}
@@ -138,9 +138,9 @@ ul{list-style:none}
 .price-cols ul{padding-bottom:12px}
 
 /* Заявка */
-.apply{position:relative;min-height:506px;padding:190px 0 190px;color:var(--white);text-align:center;background:#3d4a5c url("../img/ski2-mount.webp") center 58%/cover no-repeat}
+.apply{position:relative;min-height:506px;padding:132px 0 190px;color:var(--white);text-align:center;background:#3d4a5c url("../img/ski2-mount.webp") center 58%/cover no-repeat}
 .apply::before{content:"";position:absolute;inset:0;background:rgba(19,19,19,.39)}
-.apply::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,#fff 0,rgba(255,255,255,.7) 46px,rgba(255,255,255,0) 170px),linear-gradient(0deg,#002F86 0,rgba(0,47,134,.72) 50px,rgba(0,47,134,0) 180px);pointer-events:none}
+.apply::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,#fff 0,rgba(255,255,255,.7) 34px,rgba(255,255,255,0) 120px),linear-gradient(0deg,#002F86 0,rgba(0,47,134,.72) 50px,rgba(0,47,134,0) 180px);pointer-events:none}
 .apply .wrap{position:relative;z-index:1}
 .apply h2{font-size:61px;line-height:60px;font-weight:700}
 .apply-lead{margin:18px auto 0;max-width:700px;font-size:17px;line-height:27px}
@@ -238,7 +238,7 @@ ul{list-style:none}
   .stage h3{font-size:17px;line-height:21px;padding-right:50px}
   .stage p{font-size:16px;line-height:20px;margin-top:6px}
   .stage span{right:16px;top:18px;font-size:12px}
-  .prog{padding:44px 0 56px}
+  .prog{padding:44px 0 36px}
   .day,.day.flip{grid-template-columns:1fr;gap:18px;margin-top:36px}
   .days-more .day{margin-top:44px}
   .prog-cta{margin-top:30px}
@@ -258,8 +258,8 @@ ul{list-style:none}
   .day h3{font-size:21px;line-height:26px}
   .day-tx p{font-size:16px;line-height:22px}
   .day-tx .stay{margin-top:22px}
-  .price{margin-top:20px;padding:96px 0 96px}
-  .price::before,.price::after{height:96px}
+  .price{margin-top:0;padding:60px 0 64px}
+  .price::before,.price::after{height:60px}
   .price-k{font-size:18px;line-height:24px}
   .price-sum{font-size:44px;line-height:50px}
   .price-sub{font-size:17px;line-height:23px}
@@ -267,7 +267,7 @@ ul{list-style:none}
   .price-cols{grid-template-columns:1fr;gap:0;margin-top:28px}
   .price-cols details+details{border-top:0}
   .price-cols summary{font-size:19px}
-  .apply{padding:130px 0 130px}
+  .apply{padding:100px 0 130px}
   .apply::after{background:linear-gradient(180deg,#fff 0,rgba(255,255,255,.7) 30px,rgba(255,255,255,0) 110px),linear-gradient(0deg,#002F86 0,rgba(0,47,134,.72) 34px,rgba(0,47,134,0) 120px)}
   .apply h2{font-size:36px;line-height:40px}
   .form{margin-top:32px}
