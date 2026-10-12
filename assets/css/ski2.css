@@ -118,12 +118,17 @@ ul{list-style:none}
 .day-tx a:hover{color:var(--acc)}
 
 /* Стоимость */
-.price{padding:104px 0 70px;text-align:center}
-.price-sum{font-size:64px;line-height:72px;font-weight:700}
+.price{position:relative;margin-top:36px;padding:150px 0 150px;text-align:center;background:#f3f5f8 url(../img/ski2-snow.webp) center/cover no-repeat}
+.price::before,.price::after{content:"";position:absolute;left:0;right:0;height:150px;pointer-events:none}
+.price::before{top:0;background:linear-gradient(180deg,#fff 0,rgba(255,255,255,.75) 40%,rgba(255,255,255,0) 100%)}
+.price::after{bottom:0;background:linear-gradient(0deg,#fff 0,rgba(255,255,255,.75) 40%,rgba(255,255,255,0) 100%)}
+.price .wrap{position:relative;z-index:1}
+.price-k{font-size:24px;line-height:31px;text-transform:uppercase}
+.price-sum{margin-top:2px;font-size:64px;line-height:72px;font-weight:700}
 .price-sub{margin-top:8px;font-size:24px;line-height:31px;text-transform:uppercase}
 .price-note{margin:14px auto 0;max-width:700px;font-size:17px;line-height:25px}
 .price-cols{margin:40px auto 0;max-width:880px;display:grid;grid-template-columns:1fr 1fr;gap:40px;text-align:left}
-.price-cols details{border-top:1px solid #D9D9D9;border-bottom:1px solid #D9D9D9}
+.price-cols details{border-top:1px solid var(--blue);border-bottom:1px solid var(--blue)}
 .price-cols summary{display:flex;justify-content:space-between;align-items:center;padding:16px 0;font-size:21px;font-weight:700;cursor:pointer;list-style:none}
 .price-cols summary::-webkit-details-marker{display:none}
 .price-cols summary::after{content:"+";font-weight:400;font-size:24px;line-height:1}
@@ -253,7 +258,9 @@ ul{list-style:none}
   .day h3{font-size:21px;line-height:26px}
   .day-tx p{font-size:16px;line-height:22px}
   .day-tx .stay{margin-top:22px}
-  .price{padding:48px 0 56px}
+  .price{margin-top:20px;padding:96px 0 96px}
+  .price::before,.price::after{height:96px}
+  .price-k{font-size:18px;line-height:24px}
   .price-sum{font-size:44px;line-height:50px}
   .price-sub{font-size:17px;line-height:23px}
   .price-note{font-size:16px;line-height:23px}
