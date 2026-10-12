@@ -2,7 +2,7 @@
 @font-face{font-family:"Aviapolis";src:url("../fonts/aviapolis-bold.woff2") format("woff2");font-weight:700;font-display:swap}
 @font-face{font-family:"Aviapolis";src:url("../fonts/aviapolis-regular.woff2") format("woff2");font-weight:400;font-display:swap}
 
-:root{--blue:#0039A2;--acc:#0043BF;--sky:#00A6FF;--ink:#131313;--grey:#7A7A7A;--white:#fff;--wrap:1308px;--pad:66px}
+:root{--blue:#0039A2;--acc:#0043BF;--sky:#00A6FF;--ink:#1C2B48;--grey:#7A7A7A;--white:#fff;--wrap:1308px;--pad:66px}
 *,*::before,*::after{box-sizing:border-box}
 html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
 body{zoom:var(--k,1);margin:0;font-family:"Aviapolis",Arial,sans-serif;font-weight:400;color:var(--blue);background:var(--white);-webkit-font-smoothing:antialiased}
@@ -144,7 +144,7 @@ ul{list-style:none}
 .apply{position:relative;min-height:506px;padding:236px 0 176px;color:var(--ink);text-align:center;background:#3d4a5c url("../img/ski2-mount.webp") center bottom/auto 135% no-repeat}
 @media (min-width:1241px){.apply{background-size:140% auto;background-position:center 90%}}
 .apply::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,#fff 0,rgba(255,255,255,.8) 26px,rgba(255,255,255,.3) 70px,rgba(255,255,255,0) 130px),linear-gradient(0deg,#E4EBF3 0,rgba(228,235,243,.8) 46px,rgba(228,235,243,0) 170px);pointer-events:none}
-.apply-band{position:relative;z-index:1;padding:56px 0 60px;color:var(--white);background:rgba(11,34,82,.56);-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px)}
+.apply-band{position:relative;z-index:1;padding:56px 0 60px;color:var(--white);background:rgba(19,19,19,.46);-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px)}
 .apply .wrap{position:relative;z-index:1}
 .apply h2{font-size:61px;line-height:60px;font-weight:700}
 .apply-lead{margin:18px auto 0;max-width:700px;font-size:17px;line-height:27px}
