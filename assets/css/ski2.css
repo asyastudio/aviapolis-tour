@@ -177,6 +177,8 @@ ul{list-style:none}
 .foot-contacts a{display:flex;color:var(--white);transition:transform .25s}
 .foot-contacts svg{width:27px;height:27px}
 .foot-contacts a:hover{transform:translateY(-2px)}
+.foot-contacts .foot-mgr{align-items:center;height:40px;padding:0 20px;border:1px solid var(--white);border-radius:999px;font-size:13px;font-weight:700;text-transform:uppercase;white-space:nowrap;transition:background .25s,color .25s}
+.foot-contacts .foot-mgr:hover{transform:none;background:var(--white);color:var(--blue)}
 .foot-bot{margin-top:48px;padding-top:24px;border-top:1px solid var(--white);display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;font-size:12px}
 
 /* Планшет */
