@@ -124,7 +124,7 @@ ul{list-style:none}
 .day-tx a:hover{color:var(--acc)}
 
 /* Стоимость */
-.price{position:relative;margin-top:0;padding:84px 0 88px;text-align:center;background:#f4f6f9 url(../img/ski2-snow2.webp) center/cover no-repeat}
+.price{position:relative;margin-top:0;padding:84px 0 88px;text-align:center;background:#f4f6f9 url(../img/ski2-snow3.webp) center/cover no-repeat}
 .price::before,.price::after{content:"";position:absolute;left:0;right:0;height:84px;pointer-events:none}
 .price::before{top:0;background:linear-gradient(180deg,#fff 0,rgba(255,255,255,.75) 40%,rgba(255,255,255,0) 100%)}
 .price::after{bottom:0;background:linear-gradient(0deg,#fff 0,rgba(255,255,255,.75) 40%,rgba(255,255,255,0) 100%)}
@@ -203,8 +203,10 @@ ul{list-style:none}
 @media (max-width:760px){
   :root{--pad:16px}
   .h2{font-size:28px;line-height:36px}
-  .top{position:fixed;height:auto;padding-top:env(safe-area-inset-top);transition:background .3s,backdrop-filter .3s}
-  .top.stuck,.top.open{background:rgba(19,19,19,.34);-webkit-backdrop-filter:blur(16px) saturate(1.2);backdrop-filter:blur(16px) saturate(1.2)}
+  .top{position:absolute;height:auto;padding-top:env(safe-area-inset-top);transition:background .3s,backdrop-filter .3s}
+  #route,#program,#price,#apply{scroll-margin-top:14px}
+  .top.stuck{background:none;-webkit-backdrop-filter:none;backdrop-filter:none}
+  .top.open{background:rgba(19,19,19,.34);-webkit-backdrop-filter:blur(16px) saturate(1.2);backdrop-filter:blur(16px) saturate(1.2)}
   .top-in{height:60px;padding-inline:16px}
   .top .logo img{width:124px}
   .top nav{display:none}
@@ -217,7 +219,7 @@ ul{list-style:none}
   .burger{display:flex;flex-direction:column;justify-content:center;gap:7px;width:44px;height:44px;margin-right:-8px;padding:0 8px;border:0;background:none;cursor:pointer}
   .burger i{display:block;width:28px;height:2px;border-radius:1px;background:var(--white);box-shadow:0 0 3px rgba(19,19,19,.35);transition:transform .3s}
   .top::before{content:"";position:absolute;z-index:-1;inset:0 0 auto 0;height:128px;background:linear-gradient(180deg,rgba(19,19,19,.46) 0,rgba(19,19,19,.2) 55%,rgba(19,19,19,0) 100%);pointer-events:none;transition:opacity .3s}
-  .top.stuck::before,.top.open::before{opacity:0}
+  .top.open::before{opacity:0}
   .top.open .burger i:first-child{transform:translateY(4.5px) rotate(45deg)}
   .top.open .burger i:last-child{transform:translateY(-4.5px) rotate(-45deg)}
   .mnav{display:grid;grid-template-rows:0fr;transition:grid-template-rows .4s cubic-bezier(.4,0,.2,1)}
