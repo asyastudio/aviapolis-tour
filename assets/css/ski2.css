@@ -228,7 +228,7 @@ ul{list-style:none}
   .hero-kicker{font-size:22px;line-height:28px}
   .hero h1{margin-top:8px;font-size:34px;line-height:38px}
   .hero-lead{margin-top:16px;font-size:17px;line-height:22px}
-  .hero-links{position:absolute;top:auto;bottom:84px;flex-direction:row;align-items:center;gap:clamp(14px,5.6vw,24px);font-size:clamp(13px,3.8vw,15px);white-space:nowrap}
+  .hero-links{position:absolute;top:auto;bottom:168px;flex-direction:row;align-items:center;gap:clamp(14px,5.6vw,24px);font-size:clamp(13px,3.8vw,15px);white-space:nowrap}
   .await{margin-top:-34px;padding-top:20px}
   .await-lead{font-size:17px;line-height:23px;margin-top:8px}
   .cards{grid-template-columns:1fr;gap:14px;margin-top:24px}
