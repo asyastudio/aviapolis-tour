@@ -10,8 +10,9 @@
 <meta property="og:image" content="https://asyastudio.github.io/aviapolis-tour/assets/img/ski2-plane.webp">
 <meta property="og:type" content="website">
 <link rel="preload" href="assets/fonts/aviapolis-bold.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="preload" as="image" href="assets/img/ski2-hero-cut2.webp">
-<link rel="stylesheet" href="assets/css/ski2.css?v=1013n">
+<link rel="preload" as="image" href="assets/img/ski2-hero-cut3.webp" media="(min-width:761px)">
+<link rel="preload" as="image" href="assets/img/ski2-hero-m.webp" media="(max-width:760px)">
+<link rel="stylesheet" href="assets/css/ski2.css?v=1013o">
 <script>/*fresh*/(function(){try{var l=document.querySelector('link[href*="ski2.css?v="]');if(!l)return;var V=l.getAttribute("href").split("v=")[1];fetch("version.txt?"+Date.now(),{cache:"no-store"}).then(function(r){return r.ok?r.text():""}).then(function(t){t=t.trim();if(t&&t!==V&&sessionStorage.getItem("skv")!==t){sessionStorage.setItem("skv",t);location.reload()}}).catch(function(){})}catch(e){}})();</script>
 <script>(function(){var d=document.documentElement;function k(){var w=window.innerWidth;d.style.setProperty("--k",w>1240?Math.min(w/1440,1.8).toFixed(4):"1")}k();window.addEventListener("resize",k)})();</script>
 </head>
@@ -29,7 +30,7 @@
   </div>
   <div class="mnav" id="mnav"><div class="mnav-in"><nav aria-label="Разделы, меню"><a href="#route">Маршрут</a><a href="#program">Программа</a><a href="#price">Стоимость</a><a href="#apply">Заявка</a></nav><a class="pill" href="#apply">Хочу лететь</a></div></div>
   </div>
-  <video class="hero-bg" autoplay muted loop playsinline preload="metadata" poster="assets/img/ski2-hero-cut2.webp" aria-label="Лыжник спускается по снежному склону, над ним пролетает самолёт С-20; катание по целине, самолёт на снегу, взлёт и полёт"><source src="assets/video/ski2-hero-cut2.mp4" type="video/mp4"></video>
+  <video class="hero-bg" autoplay muted loop playsinline preload="metadata" poster="assets/img/ski2-hero-cut3.webp" aria-label="Лыжник спускается по снежному склону, над ним пролетает самолёт С-20; катание по целине, самолёт на снегу, взлёт и полёт" data-d="assets/video/ski2-hero-cut3.mp4" data-m="assets/video/ski2-hero-m.mp4" data-pm="assets/img/ski2-hero-m.webp"></video><script>(function(){var v=document.currentScript.previousElementSibling,m=window.matchMedia&&matchMedia("(max-width:760px)").matches;if(m){v.poster=v.getAttribute("data-pm")}v.src=v.getAttribute(m?"data-m":"data-d")})();</script>
   <div class="hero-in">
     <p class="hero-kicker">Хели-ски</p>
     <h1>Полёт на&nbsp;лыжах<br>Урал</h1>
