@@ -118,8 +118,8 @@ ul{list-style:none}
 .day-tx a:hover{color:var(--acc)}
 
 /* Стоимость */
-.price{position:relative;margin-top:36px;padding:150px 0 150px;text-align:center;background:#f3f5f8 url(../img/ski2-snow.webp) center/cover no-repeat}
-.price::before,.price::after{content:"";position:absolute;left:0;right:0;height:150px;pointer-events:none}
+.price{position:relative;margin-top:36px;padding:150px 0 150px;text-align:center;background:linear-gradient(180deg,#fff 0,#ECF2FA 30%,#ECF2FA 70%,#fff 100%)}
+.price::before,.price::after{content:none}
 .price::before{top:0;background:linear-gradient(180deg,#fff 0,rgba(255,255,255,.75) 40%,rgba(255,255,255,0) 100%)}
 .price::after{bottom:0;background:linear-gradient(0deg,#fff 0,rgba(255,255,255,.75) 40%,rgba(255,255,255,0) 100%)}
 .price .wrap{position:relative;z-index:1}
