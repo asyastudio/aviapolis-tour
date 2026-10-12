@@ -88,9 +88,11 @@ ul{list-style:none}
 .days-more.open{grid-template-rows:1fr;opacity:1}
 .days-more>div{overflow:hidden;min-height:0}
 .days-more .day{margin-top:58px}
-.prog-cta{display:flex;justify-content:center;margin-top:48px}
-.prog-cta .btn-line{background:var(--blue);border-color:var(--blue);color:var(--white);font-family:inherit;cursor:pointer}
-.prog-cta .btn-line:hover{background:var(--acc);border-color:var(--acc)}
+.prog-cta{display:flex;justify-content:center;margin-top:56px}
+.prog-cta .btn-line{height:56px;padding:0 32px;gap:14px;font-size:15px;background:var(--sky);border-color:var(--sky);color:var(--white);font-family:inherit;cursor:pointer}
+.prog-cta .btn-line::after{content:"";width:8px;height:8px;border-right:2px solid currentColor;border-bottom:2px solid currentColor;transform:translateY(-3px) rotate(45deg);transition:transform .35s}
+.prog-cta .btn-line[aria-expanded="true"]::after{transform:translateY(2px) rotate(-135deg)}
+.prog-cta .btn-line:hover{background:var(--blue);border-color:var(--blue)}
 .day-ph{aspect-ratio:636/494;border-radius:21px;overflow:hidden;background:#dfe7f0}
 .day-ph img,.day-ph video{width:100%;height:100%;object-fit:cover}
 .sl{position:relative}
