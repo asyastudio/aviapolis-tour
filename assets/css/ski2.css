@@ -274,7 +274,7 @@ ul{list-style:none}
   .day h3{font-size:21px;line-height:26px}
   .day-tx p{font-size:16px;line-height:22px}
   .day-tx .stay{margin-top:22px}
-  .price{margin-top:0;padding:60px 0 64px}
+  .price{margin-top:0;padding:60px 0 64px;background-image:url(../img/ski2-snow-m.webp);background-position:center 30%}
   .price::before,.price::after{height:60px}
   .price-k{font-size:18px;line-height:24px}
   .price-sum{font-size:44px;line-height:50px}
