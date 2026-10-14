@@ -25,7 +25,7 @@ ul{list-style:none}
 .top-tg{display:flex;align-items:center;justify-content:center;width:40px;height:40px;color:var(--white);transition:transform .25s}
 .top-tg svg{width:25px;height:25px}
 .top-tg:hover{transform:translateY(-2px)}
-.top nav{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);display:flex;gap:46px;font-size:15px;color:var(--white)}
+.top nav{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);display:flex;gap:46px;font-size:16px;color:var(--white)}
 .top nav a:hover{text-decoration:underline;text-underline-offset:4px}
 .pill{display:inline-flex;align-items:center;justify-content:center;white-space:nowrap;height:40px;min-width:160px;padding:0 22px;border-radius:999px;background:var(--white);color:var(--blue);font-weight:700;font-size:14px;text-transform:uppercase;border:0;cursor:pointer;font-family:inherit;transition:background .2s,color .2s}
 .pill:hover{background:var(--blue);color:var(--white)}
@@ -172,7 +172,7 @@ ul{list-style:none}
 .foot .wrap{position:relative}
 .foot-top{display:flex;justify-content:space-between;gap:40px;flex-wrap:wrap}
 .foot .logo img{width:160px;height:auto}
-.foot nav{margin-top:22px;display:flex;gap:32px;font-size:14px;flex-wrap:wrap}
+.foot nav{margin-top:22px;display:flex;gap:32px;font-size:15px;flex-wrap:wrap}
 .foot nav a:hover{text-decoration:underline;text-underline-offset:4px}
 .foot-contacts{display:flex;gap:22px;align-items:center;padding-top:8px}
 .foot-contacts a{display:flex;color:var(--white);transition:transform .25s}
