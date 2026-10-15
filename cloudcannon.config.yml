@@ -1,0 +1,55 @@
+collections_config:
+  pages:
+    path: ''
+    glob:
+      - polet-na-lyzhah.html
+    icon: wysiwyg
+    disable_url: false
+    include_developer_files: false
+    disable_add: false
+    disable_add_folder: false
+    disable_file_actions: false
+_editables:
+  text:
+    allow_custom_markup: true
+    remove_custom_markup: false
+    bold: true
+    copyformatting: false
+    italic: true
+    link: true
+    redo: true
+    removeformat: true
+    strike: false
+    subscript: false
+    superscript: false
+    underline: false
+    undo: true
+  block:
+    allow_custom_markup: false
+    remove_custom_markup: false
+    blockquote: true
+    bold: true
+    bulletedlist: true
+    code: false
+    copyformatting: false
+    embed: false
+    expandable: false
+    horizontalrule: false
+    image: true
+    image_size_attributes: false
+    indent: false
+    italic: true
+    link: true
+    numberedlist: true
+    outdent: false
+    redo: true
+    removeformat: true
+    resize_style: contain
+    snippet: true
+    strike: false
+    subscript: false
+    superscript: false
+    table: false
+    underline: false
+    undo: true
+timezone: Etc/UTC
